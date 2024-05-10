@@ -1,0 +1,43 @@
+type: object
+properties:
+  title:
+    type: string
+    description: The title of the textbook.
+  chapters:
+    type: array
+    description: A list of chapters in the textbook.
+    items:
+      $ref: '#/definitions/chapter'
+  metadata:
+    type: object
+    additionalProperties: true
+    description: Metadata for the textbook.
+
+definitions:
+  chapter:
+    type: object
+    properties:
+      title:
+        type: string
+        description: The title of the chapter.
+      range:
+        type: array
+        items:
+          type: integer
+        minItems: 2
+        maxItems: 2
+        description: The start and end pages of the chapter.
+      subchapters:
+        type: array
+        items:
+          $ref: '#/definitions/chapter'
+        description: A list of subchapters.
+      metadata:
+        type: object
+        additionalProperties: true
+        description: Metadata for the chapter.
+
+required:
+  - title
+  - chapters
+  - metadata
