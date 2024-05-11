@@ -1,11 +1,8 @@
 import firebase_admin
-from firebase_admin import credentials
 from firebase_admin import firestore
 import yaml
+import getCredentials
 
-def initial_setup():
-    cred = credentials.Certificate('../firebase_key.json')
-    firebase_admin.initialize_app(cred)
 
 def initial_book_upload():
     yaml_file = '../extractions/bookInfo.yaml'
@@ -41,4 +38,4 @@ def initial_chapters_upload():
 if __name__ == '__main__':
     initial_setup()
     # initial_book_upload()
-    initial_chapters_upload()
+    # initial_chapters_upload()
