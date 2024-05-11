@@ -1,5 +1,6 @@
 import { storage } from 'firebase-admin';
 import { PDFDocument } from 'pdf-lib';
+import { fetchChapterInfo, fetchBookInfo } from './firebaseDB';
 
 /**
  * Fetch pages from Firebase Storage
@@ -10,11 +11,6 @@ export async function getPagesFromFirebase(docId: string, pages: number[]): Prom
     return mergePdfs(filePaths, outputFileName);
 }
 
-export async function getChapterPagesFromFirebase(chapter: string): Promise<string> {
-    const filePaths = [`${docId}/${chapter}.pdf`];
-    const outputFileName = `${docId}/${chapter}.pdf`;
-    return mergePdfs(filePaths, outputFileName);
-}
 
 async function fetchPageFromFirebase(filePath: string): Promise<string> {
     const bucket = storage().bucket();
