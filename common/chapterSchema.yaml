@@ -1,0 +1,32 @@
+type: object
+properties:
+  id:
+    type: string
+    description: The ID of the chapter.
+  title:
+    type: string
+    description: The title of the chapter.
+  range:
+    type: array
+    items:
+      type: integer
+    minItems: 2
+    maxItems: 2
+    description: The start and end pages of the chapter.
+  subchapters:
+    type: array
+    items:
+      id:
+        type: string
+        description: The ID of the subchapter.
+    description: A list of subchapters.
+  metadata:
+    type: object
+    additionalProperties: true
+    description: Metadata for the chapter.
+
+required:
+  - id
+  - title
+  - range
+  
