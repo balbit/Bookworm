@@ -1,6 +1,7 @@
 import { storage } from 'firebase-admin';
 import { PDFDocument } from 'pdf-lib';
-import { fetchChapterInfo, fetchBookInfo } from './firebaseDB';
+import { fetchChapterInfo, fetchBookInfo, jsonifyDocumentData } from './firebaseDB';
+import { DocumentData } from 'firebase-admin/firestore';
 
 /**
  * Fetch pages from Firebase Storage
@@ -11,7 +12,48 @@ export async function getPagesFromFirebase(docId: string, pages: number[]): Prom
     return mergePdfs(filePaths, outputFileName);
 }
 
+export async function getChapterInfo(chapterId: string) {
+    return fetchChapterInfo(chapterId);
+}
 
+export async function getBookInfo(bookId: string) {
+    return fetchBookInfo(bookId);
+}
+
+export async function getChapterPages(chapterId: string): Promise<string> {
+    const chapterInfo = await fetchChapterInfo(chapterId);
+    const pageList = Array.from({ length: chapterInfo.range[1] }, (_, i) => i + chapterInfo.range[0]);
+    return getPagesFromFirebase(chapterInfo.metadata.book, chapterInfo.range);
+}
+
+/**
+ * Adds a "subchapterInfo" field to the chapter object with the subchapter info,
+ * represented as a json string.
+ * Recursively fetches subchapter info for each subchapter.
+ * 
+ * @param chapterId id of the chapter to fetch
+ * @returns a json representation of the chapter with subchapter info
+ */
+async function getSubchaptersInfo(chapterId: string): Promise<string> {
+    const chapterInfo = await fetchChapterInfo(chapterId);
+    const subchapters = chapterInfo.subchapters;
+    const subchapterInfo = await Promise.all(subchapters.map((subchapterId: string) => getSubchaptersInfo(subchapterId)));
+    chapterInfo.subchapterInfo = subchapterInfo;
+    return jsonifyDocumentData(chapterInfo);
+}
+
+export async function getBookSubchaptersInfo(bookId: string): Promise<string> {
+    const bookInfo = await fetchBookInfo(bookId);
+    const chapterInfo: Array<DocumentData> = await Promise.all(bookInfo.chapters.map((chapterId: string) => getSubchaptersInfo(chapterId)));
+    bookInfo.chapterInfo = chapterInfo;
+    return jsonifyDocumentData(bookInfo);
+}
+
+/**
+ * Fetches a page from Firebase Storage.
+ * @param filePath The path to the file in Firebase Storage.
+ * @returns A promise that resolves to the URL of the file.
+ */
 async function fetchPageFromFirebase(filePath: string): Promise<string> {
     const bucket = storage().bucket();
     const file = bucket.file(filePath);
@@ -58,4 +100,3 @@ async function mergePdfs(filePaths: Array<string>, outputFileName: string): Prom
 
     return url;
 }
-
