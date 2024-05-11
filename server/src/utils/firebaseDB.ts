@@ -75,14 +75,8 @@ async function fetchBookInfo(bookId: string): Promise<DocumentData> {
     }
 }
 
-/**
- * Prepares Firestore data for JSON serialization.
- * Converts Firestore-specific types like Timestamp to standard serializable types.
- * @param docData The Firestore document data.
- * @returns A JSON string representing the document.
- */
-export function jsonifyDocumentData(docData: DocumentData): string {
-    const dataForJson = Object.entries(docData).reduce((acc, [key, value]) => {
+export function DocumentDataToRecord(docData: DocumentData): Record<string, any> {
+    const record = Object.entries(docData).reduce((acc, [key, value]) => {
         if (value instanceof admin.firestore.Timestamp) {
             acc[key] = value.toDate().toISOString(); // Convert Timestamp to ISO string
         } else {
@@ -90,6 +84,17 @@ export function jsonifyDocumentData(docData: DocumentData): string {
         }
         return acc;
     }, {} as Record<string, any>);
+    return record;
+}
+
+/**
+ * Prepares Firestore data for JSON serialization.
+ * Converts Firestore-specific types like Timestamp to standard serializable types.
+ * @param docData The Firestore document data.
+ * @returns A JSON string representing the document.
+ */
+export function jsonifyDocumentData(docData: DocumentData): string {
+    const dataForJson = DocumentDataToRecord(docData);
 
     return JSON.stringify(dataForJson);
 }

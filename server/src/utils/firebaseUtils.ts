@@ -1,6 +1,6 @@
 import { storage } from 'firebase-admin';
 import { PDFDocument } from 'pdf-lib';
-import { fetchChapterInfo, fetchBookInfo, jsonifyDocumentData } from './firebaseDB';
+import { fetchChapterInfo, fetchBookInfo, DocumentDataToRecord, jsonifyDocumentData } from './firebaseDB';
 import { DocumentData } from 'firebase-admin/firestore';
 
 /**
@@ -26,27 +26,27 @@ export async function getChapterPages(chapterId: string): Promise<string> {
     return getPagesFromFirebase(chapterInfo.metadata.book, chapterInfo.range);
 }
 
-/**
- * Adds a "subchapterInfo" field to the chapter object with the subchapter info,
- * represented as a json string.
- * Recursively fetches subchapter info for each subchapter.
- * 
- * @param chapterId id of the chapter to fetch
- * @returns a json representation of the chapter with subchapter info
- */
-async function getSubchaptersInfo(chapterId: string): Promise<string> {
+async function getSubchaptersInfo(chapterId: string): Promise<Record<string, any> > {
     const chapterInfo = await fetchChapterInfo(chapterId);
     const subchapters = chapterInfo.subchapters;
     const subchapterInfo = await Promise.all(subchapters.map((subchapterId: string) => getSubchaptersInfo(subchapterId)));
     chapterInfo.subchapterInfo = subchapterInfo;
-    return jsonifyDocumentData(chapterInfo);
+    return DocumentDataToRecord(chapterInfo);
 }
 
-export async function getBookSubchaptersInfo(bookId: string): Promise<string> {
+/**
+ * Adds a "subchapterInfo" field to the chapter object with the subchapter info,
+ * represented as a map.
+ * Recursively fetches subchapter info for each subchapter.
+ * 
+ * @param chapterId id of the chapter to fetch
+ * @returns a Record representing the chapter info with subchapter info
+ */
+export async function getBookSubchaptersInfo(bookId: string): Promise<Record<string, any> >{
     const bookInfo = await fetchBookInfo(bookId);
     const chapterInfo: Array<DocumentData> = await Promise.all(bookInfo.chapters.map((chapterId: string) => getSubchaptersInfo(chapterId)));
     bookInfo.chapterInfo = chapterInfo;
-    return jsonifyDocumentData(bookInfo);
+    return DocumentDataToRecord(bookInfo);
 }
 
 /**
