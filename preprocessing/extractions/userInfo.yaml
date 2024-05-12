@@ -1,0 +1,39 @@
+- id: "user-Test_1"
+  name: "Alice Johnson"
+  email: "alice@example.com"
+  books:
+    - book-8Q7HM3
+  progress:
+    book-8Q7HM3:
+      chapters:
+        - chapterId: "chapter-NnwnZF"
+          percentComplete: 100
+          metadata:
+            lastRead: "2024-05-12"
+        - chapterId: "chapter-cve24u"
+          percentComplete: 100
+          metadata:
+            lastRead: "2024-05-10"
+      metadata:
+        lastRead: "2024-05-12"
+        favorite: true
+  metadata:
+    lastLogin: "2024-05-12"
+
+- id: "user-Test_2"
+  name: "Bob Smith"
+  email: "bob@example.com"
+  books:
+    - book-8Q7HM3
+  progress:
+    book-8Q7HM3:
+      chapters:
+        - chapterId: "chapter-XKbs6i"
+          percentComplete: 100
+          metadata:
+            lastRead: "2024-05-11"
+      metadata:
+        lastRead: "2024-05-12"
+        favorite: false
+  metadata:
+    lastLogin: "2024-05-11"
