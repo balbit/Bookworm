@@ -3,7 +3,38 @@ import { getPagesFromFirebase, getChapterInfo, getBookInfo, getChapterPages, get
 
 export const router = Router();
 
-// GET /api/v1/getPages
+/**
+ * @swagger
+ * /api/v1/getPages:
+ *   get:
+ *     summary: Retrieve specific pages from a document in Firebase
+ *     parameters:
+ *       - in: query
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The document ID
+ *       - in: query
+ *         name: pages
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The pages to retrieve (e.g., "1-3" or "1,2,3")
+ *     responses:
+ *       200:
+ *         description: A list of pages
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: string
+ *       400:
+ *         description: Invalid or missing id or pages parameter
+ *       500:
+ *         description: Internal server error
+ */
 router.get('/getPages', async (req: Request, res: Response) => {
     const { id, pages } = req.query;
 
@@ -23,6 +54,30 @@ router.get('/getPages', async (req: Request, res: Response) => {
     }
 });
 
+/**
+ * @swagger
+ * /api/v1/getChapterInfo:
+ *   get:
+ *     summary: Retrieve chapter information from Firebase
+ *     parameters:
+ *       - in: query
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The chapter ID
+ *     responses:
+ *       200:
+ *         description: Chapter information
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *       400:
+ *         description: Invalid or missing id parameter
+ *       500:
+ *         description: Internal server error
+ */
 router.get('/getChapterInfo', async (req: Request, res: Response) => {
     const { id } = req.query;
 
@@ -41,6 +96,30 @@ router.get('/getChapterInfo', async (req: Request, res: Response) => {
     }
 });
 
+/**
+ * @swagger
+ * /api/v1/getBookInfo:
+ *   get:
+ *     summary: Retrieve book information from Firebase
+ *     parameters:
+ *       - in: query
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The book ID
+ *     responses:
+ *       200:
+ *         description: Book information
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *       400:
+ *         description: Invalid or missing id parameter
+ *       500:
+ *         description: Internal server error
+ */
 router.get('/getBookInfo', async (req: Request, res: Response) => {
     const { id } = req.query;
 
@@ -59,6 +138,32 @@ router.get('/getBookInfo', async (req: Request, res: Response) => {
     }
 });
 
+/**
+ * @swagger
+ * /api/v1/getChapterPages:
+ *   get:
+ *     summary: Retrieve pages of a chapter from Firebase
+ *     parameters:
+ *       - in: query
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The chapter ID
+ *     responses:
+ *       200:
+ *         description: Pages of the chapter
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: string
+ *       400:
+ *         description: Invalid or missing id parameter
+ *       500:
+ *         description: Internal server error
+ */
 router.get('/getChapterPages', async (req: Request, res: Response) => {
     const { id } = req.query;
 
@@ -77,6 +182,30 @@ router.get('/getChapterPages', async (req: Request, res: Response) => {
     }
 });
 
+/**
+ * @swagger
+ * /api/v1/getBookSubchaptersInfo:
+ *   get:
+ *     summary: Retrieve subchapter information of a book from Firebase
+ *     parameters:
+ *       - in: query
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The book ID
+ *     responses:
+ *       200:
+ *         description: Subchapter information of the book
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *       400:
+ *         description: Invalid or missing id parameter
+ *       500:
+ *         description: Internal server error
+ */
 router.get('/getBookSubchaptersInfo', async (req: Request, res: Response) => {
     const { id } = req.query;
 
