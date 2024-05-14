@@ -1,3 +1,4 @@
+$id: "BookSchema"
 type: object
 properties:
   id:
@@ -13,14 +14,18 @@ properties:
       id:
         type: string
         description: The ID of the chapter.
+  chapterInfo:
+    type: array
+    description: A list of information about chapters in the textbook.
+    items:
+      type: ChapterSchema
   metadata:
     type: object
     additionalProperties: true
     description: Metadata for the textbook.
 
-
-
 required:
   - id
   - title
   - chapters
+  - metadata

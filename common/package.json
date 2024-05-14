@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.12.11"
+  },
+  "scripts": {
+    "convert": "tsc && node dist/convertSchemas.js"
+  },
+  "dependencies": {
+    "yaml": "^2.4.2"
+  }
+}

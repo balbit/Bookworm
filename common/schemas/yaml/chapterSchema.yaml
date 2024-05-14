@@ -1,3 +1,4 @@
+$id: "ChapterSchema"
 type: object
 properties:
   id:
@@ -16,17 +17,23 @@ properties:
   subchapters:
     type: array
     items:
-      id:
-        type: string
-        description: The ID of the subchapter.
+      type: object
+      properties:
+        id:
+          type: string
+          description: The ID of the subchapter.
     description: A list of subchapters.
+  subchapterInfo:
+    type: array
+    items:
+      type: ChapterSchema
+    description: A list of information about subchapters.
   metadata:
     type: object
     additionalProperties: true
     description: Metadata for the chapter.
-
 required:
   - id
   - title
   - range
-  
+  - metadata
