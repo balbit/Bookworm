@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
-import { getTextbookContent } from '../../helpers/requests.ts';
+import { getBookSubchaptersInfo } from '../../helpers/requests.ts';
+import { BookSchema } from '@common/schemas/ts/bookSchema.ts';
+import ChapterDisplay from './ChapterDisplay.tsx';
 
 function Book(props: { id: string }) {
     const { id } = props;
     const [isLoading, setIsLoading] = useState(true);
-    const [contentURL, setContentURL] = useState("");
+    const [bookInfo, setBookInfo] = useState<BookSchema | undefined>(undefined);
 
     useEffect(() => {
         let isMounted = true; // Flag to track component mount status
@@ -12,10 +14,10 @@ function Book(props: { id: string }) {
         async function fetchContent() {
             try {
                 setIsLoading(true); // Set loading true at the start of the fetch
-                const content = await getTextbookContent(id, 1, 2);
-                console.log(content);
+                const gotBookInfo = await getBookSubchaptersInfo(id);
+
                 if (isMounted) {
-                    setContentURL(content);
+                    setBookInfo(gotBookInfo);
                 }
             } catch (error) {
                 console.error(error);
@@ -33,14 +35,22 @@ function Book(props: { id: string }) {
         };
     }, [id]); // Ensure this effect runs only when `id` changes
 
-    return (
-        <div>
-            <h1>Book {id}</h1>
-            <h2>Loading State: {isLoading ? "Loading..." : "Loaded"}</h2>
-            <h2>Retrieved Content URL: {contentURL}</h2>
-            <iframe src={contentURL} width="100%" height="1000px" title={`Book Content ${id}`}></iframe>
-        </div>
-    );
+    if (isLoading) {
+        return <h1>Loading...</h1>;
+    }
+    else if (!bookInfo) {
+        return <h1>Failed to fetch book info</h1>;
+    }else {
+        const image: string | undefined = bookInfo.metadata.image;
+        return (
+            <div>
+                <h1>Book {bookInfo.title}</h1>
+                <img src={image} alt={`Cover for ${bookInfo.title}`} />
+                {bookInfo.chapterInfo && bookInfo.chapterInfo.map((chapter) => <ChapterDisplay key={chapter.id} chapterInfo={chapter} />)}
+
+            </div>
+        );
+    }
 }
 
 export default Book;
