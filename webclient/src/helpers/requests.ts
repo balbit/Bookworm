@@ -1,4 +1,9 @@
 import {SERVER_URL} from '../config.ts';
+import { BookSchema } from '@common/schemas/ts/bookSchema';
+import { ChapterSchema } from '@common/schemas/ts/chapterSchema.ts';
+import axios from 'axios';
+
+const BASE_URL = `${SERVER_URL}/api/v1`;
 
 /**
  * Creates a Textbook Metadata object representing the metadata for a textbook
@@ -40,6 +45,66 @@ async function getTextbookContent(textbookID: string, firstPage: number, lastPag
         throw err;
     });
 }
+
+export const getPages = async (id: string, pages: string): Promise<string[]> => {
+    try {
+        const response = await axios.get<string[]>(`${BASE_URL}/getPages`, {
+            params: { id, pages }
+        });
+        return response.data;
+    } catch (error) {
+        console.error(error);
+        throw new Error('Failed to fetch pages');
+    }
+};
+
+export const getChapterInfo = async (id: string): Promise<ChapterSchema> => {
+    try {
+        const response = await axios.get<ChapterSchema>(`${BASE_URL}/getChapterInfo`, {
+            params: { id }
+        });
+        return response.data;
+    } catch (error) {
+        console.error(error);
+        throw new Error('Failed to fetch chapter info');
+    }
+};
+
+export const getBookInfo = async (id: string): Promise<BookSchema> => {
+    try {
+        const response = await axios.get<BookSchema>(`${BASE_URL}/getBookInfo`, {
+            params: { id }
+        });
+        return response.data;
+    } catch (error) {
+        console.error(error);
+        throw new Error('Failed to fetch book info');
+    }
+};
+
+export const getChapterPages = async (id: string): Promise<string> => {
+    try {
+        const response = await axios.get<string>(`${BASE_URL}/getChapterPages`, {
+            params: { id }
+        });
+        return response.data;
+    } catch (error) {
+        console.error(error);
+        throw new Error('Failed to fetch chapter pages');
+    }
+};
+
+export const getBookSubchaptersInfo = async (id: string): Promise<BookSchema> => {
+    try {
+        const response = await axios.get<BookSchema>(`${BASE_URL}/getBookSubchaptersInfo`, {
+            params: { id }
+        });
+        return response.data;
+    } catch (error) {
+        console.error(error);
+        throw new Error('Failed to fetch book subchapter info');
+    }
+};
 
 function constructPageQuery(first: number, last: number): string {
     return (first === last) ? `${first}`: `${first}-${last}`;
