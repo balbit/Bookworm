@@ -2,16 +2,58 @@
     margin-left: 0;
     font-size: 1em;
     text-align: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .subchapter-container {
-    margin-left: 20px; /* Adjust the indentation as needed */
-    font-size: 0.9em;  /* Smaller text for subchapters */
+    margin-left: 80px; /* Adjust the indentation as needed */
+    font-size: 0.8em;  /* Smaller text for subchapters */
     text-align: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.chapter-container:hover:not(.subchapter-container),
+.subchapter-container:hover {
+    background-color: #f0f0f0; /* Highlight color on hover */
+}
+
+.subchapter-container::before {
+    content: '>';
+    position: absolute;
+    left: -20px; /* Position the ">" sign in the margin */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
 }
 
 .subchapter-container .subchapter-container {
-    margin-left: 20px; /* Additional indentation for deeper levels */
-    font-size: 0.8em;  /* Further smaller text for deeper subchapters */
+    margin-left: 80px; /* Additional indentation for deeper levels */
+    font-size: 0.6em;  /* Further smaller text for deeper subchapters */
     text-align: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.subchapter-container .subchapter-container::before {
+    content: '>';
+    position: absolute;
+    left: -20px; /* Position the ">" sign in the margin */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
 }

@@ -43,24 +43,31 @@ function ChapterDisplay(props: {chapterInfo: ChapterSchema}) {
 
     if (subchapters) {
         return (
-            <div className="chapter-container">
-                <h1>{title}</h1>
-                <h2>Pages: {range[0]}-{range[1]}</h2>
-                <button onClick={() => setExpanded(!expanded)}>{expanded ? "Collapse" : "Expand"}</button>
-                <button onClick={() => setIsReading(!isReading)}>{isReading ? "Stop Reading" : "Read"}</button>
-                {isReading && <iframe src={contentURL} width="100%" height="1000px" title={`Book Content ${id}`}></iframe>}
-                {subchapterInfo && (
-                    <h2>
-                        Number of Subchapters: {subchapterInfo.length}
-                    </h2>
-                )} 
-                {expanded && subchapters && subchapterInfo && (
-                    <div className="subchapter-container">
-                        {subchapterInfo.map((subchapter) => (
-                            <ChapterDisplay key={subchapter.id} chapterInfo={subchapter} />
-                        ))}
-                    </div>
-                )}
+            <div onClick={(e) => e.stopPropagation()}>
+                <div 
+                    className={`chapter-container ${subchapters ? 'subchapter-container' : ''}`} 
+                    onClick={() => {
+                        if (subchapters.length > 0) {
+                            setExpanded(!expanded);
+                        } else {
+                            setIsReading(!isReading);
+                        }
+                    }}
+                >
+                    <h1>{title}</h1>
+                    <h2>Pages: {range[0]}-{range[1]}</h2>
+                    <button onClick={(e) => { e.stopPropagation(); setIsReading(!isReading); }}>
+                        {isReading ? "Stop Reading" : "Read"}
+                    </button>
+                    {isReading && <iframe src={contentURL} width="100%" height="1000px" title={`Book Content ${id}`}></iframe>}
+                    {expanded && subchapters && subchapterInfo && (
+                        <div>
+                            {subchapterInfo.map((subchapter) => (
+                                <ChapterDisplay key={subchapter.id} chapterInfo={subchapter} />
+                            ))}
+                        </div>
+                    )}
+                </div>
             </div>
         );
     }
