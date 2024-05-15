@@ -12,7 +12,7 @@
 }
 
 .subchapter-container {
-    margin-left: 80px; /* Adjust the indentation as needed */
+    margin-left: 60px; /* Adjust the indentation as needed */
     font-size: 0.8em;  /* Smaller text for subchapters */
     text-align: left;
     border: 1px solid #ccc;
@@ -24,7 +24,10 @@
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.chapter-container:hover:not(.subchapter-container),
+.chapter-container:hover:not(.subchapter-container) {
+    background-color: #f0f0f0; /* Highlight color on hover */
+}
+
 .subchapter-container:hover {
     background-color: #f0f0f0; /* Highlight color on hover */
 }
@@ -32,14 +35,14 @@
 .subchapter-container::before {
     content: '>';
     position: absolute;
-    left: -20px; /* Position the ">" sign in the margin */
-    top: 50%;
+    left: -60px; /* Position the ">" sign in the margin */
+    top: 30%;
     transform: translateY(-50%);
-    font-size: 1.2em;
+    font-size: 6em;
 }
 
 .subchapter-container .subchapter-container {
-    margin-left: 80px; /* Additional indentation for deeper levels */
+    margin-left: 60px; /* Additional indentation for deeper levels */
     font-size: 0.6em;  /* Further smaller text for deeper subchapters */
     text-align: left;
     border: 1px solid #ccc;
@@ -52,8 +55,8 @@
 .subchapter-container .subchapter-container::before {
     content: '>';
     position: absolute;
-    left: -20px; /* Position the ">" sign in the margin */
-    top: 50%;
+    left: -60px; /* Position the ">" sign in the margin */
+    top: 30%;
     transform: translateY(-50%);
-    font-size: 1em;
+    font-size: 6em;
 }

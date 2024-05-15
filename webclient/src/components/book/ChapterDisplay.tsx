@@ -3,9 +3,10 @@ import { getChapterPages } from '../../helpers/requests.ts';
 import { ChapterSchema } from '@common/schemas/ts/chapterSchema.ts';
 import './ChapterDisplay.css';
 
-function ChapterDisplay(props: {chapterInfo: ChapterSchema}) {
+function ChapterDisplay(props: {chapterInfo: ChapterSchema, isRootLevel?: boolean}) {
     const { chapterInfo } = props;
     const { id, title, range, subchapters, subchapterInfo, metadata } = chapterInfo;
+    const { isRootLevel = false } = props;
 
     const [expanded, setExpanded] = useState(false);
     const [isReading, setIsReading] = useState(false);
@@ -45,7 +46,7 @@ function ChapterDisplay(props: {chapterInfo: ChapterSchema}) {
         return (
             <div onClick={(e) => e.stopPropagation()}>
                 <div 
-                    className={`chapter-container ${subchapters ? 'subchapter-container' : ''}`} 
+                    className={`${isRootLevel ? 'chapter-container' : 'subchapter-container'}`} 
                     onClick={() => {
                         if (subchapters.length > 0) {
                             setExpanded(!expanded);
@@ -55,6 +56,7 @@ function ChapterDisplay(props: {chapterInfo: ChapterSchema}) {
                     }}
                 >
                     <h1>{title}</h1>
+                    <h2>{isRootLevel}</h2>
                     <h2>Pages: {range[0]}-{range[1]}</h2>
                     <button onClick={(e) => { e.stopPropagation(); setIsReading(!isReading); }}>
                         {isReading ? "Stop Reading" : "Read"}

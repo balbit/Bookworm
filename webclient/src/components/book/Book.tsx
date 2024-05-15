@@ -46,7 +46,7 @@ function Book(props: { id: string }) {
             <div>
             <h1>Book {bookInfo.title}</h1>
             <img src={image} alt={`Cover for ${bookInfo.title}`} style={{ width: '200px' }} />
-            {bookInfo.chapterInfo && bookInfo.chapterInfo.map((chapter) => <ChapterDisplay chapterInfo={chapter} />)}
+            {bookInfo.chapterInfo && bookInfo.chapterInfo.map((chapter) => <ChapterDisplay chapterInfo={chapter} isRootLevel={true} />)}
             </div>
         );
     }
