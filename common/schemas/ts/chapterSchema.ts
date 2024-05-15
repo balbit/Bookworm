@@ -4,7 +4,7 @@ export interface ChapterSchema {
     range: number[];
     subchapters?: {
         id: string;
-  }[];
+    }[];
     subchapterInfo?: ChapterSchema[];
     metadata: { [key: string]: any };
 }

@@ -44,10 +44,9 @@ function Book(props: { id: string }) {
         const image: string | undefined = bookInfo.metadata.image;
         return (
             <div>
-                <h1>Book {bookInfo.title}</h1>
-                <img src={image} alt={`Cover for ${bookInfo.title}`} />
-                {bookInfo.chapterInfo && bookInfo.chapterInfo.map((chapter) => <ChapterDisplay key={chapter.id} chapterInfo={chapter} />)}
-
+            <h1>Book {bookInfo.title}</h1>
+            <img src={image} alt={`Cover for ${bookInfo.title}`} style={{ width: '200px' }} />
+            {bookInfo.chapterInfo && bookInfo.chapterInfo.map((chapter) => <ChapterDisplay chapterInfo={chapter} />)}
             </div>
         );
     }

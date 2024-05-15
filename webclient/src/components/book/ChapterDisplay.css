@@ -1,0 +1,17 @@
+.chapter-container {
+    margin-left: 0;
+    font-size: 1em;
+    text-align: left;
+}
+
+.subchapter-container {
+    margin-left: 20px; /* Adjust the indentation as needed */
+    font-size: 0.9em;  /* Smaller text for subchapters */
+    text-align: left;
+}
+
+.subchapter-container .subchapter-container {
+    margin-left: 20px; /* Additional indentation for deeper levels */
+    font-size: 0.8em;  /* Further smaller text for deeper subchapters */
+    text-align: left;
+}

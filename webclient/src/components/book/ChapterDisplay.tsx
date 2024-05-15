@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getChapterPages } from '../../helpers/requests.ts';
 import { ChapterSchema } from '@common/schemas/ts/chapterSchema.ts';
+import './ChapterDisplay.css';
 
 function ChapterDisplay(props: {chapterInfo: ChapterSchema}) {
     const { chapterInfo } = props;
@@ -31,22 +32,35 @@ function ChapterDisplay(props: {chapterInfo: ChapterSchema}) {
             }
         }
 
-        fetchContent();
+        if (isReading) {
+            fetchContent();
+        }
 
         return () => {
             isMounted = false;
         };
-    }, [isReading]);
+    }, [isReading, id]);
 
     if (subchapters) {
         return (
-            <div>
+            <div className="chapter-container">
                 <h1>{title}</h1>
                 <h2>Pages: {range[0]}-{range[1]}</h2>
                 <button onClick={() => setExpanded(!expanded)}>{expanded ? "Collapse" : "Expand"}</button>
                 <button onClick={() => setIsReading(!isReading)}>{isReading ? "Stop Reading" : "Read"}</button>
                 {isReading && <iframe src={contentURL} width="100%" height="1000px" title={`Book Content ${id}`}></iframe>}
-                {expanded && subchapterInfo && subchapterInfo.map((subchapter) => <ChapterDisplay key={subchapter.id} chapterInfo={subchapter} />)}
+                {subchapterInfo && (
+                    <h2>
+                        Number of Subchapters: {subchapterInfo.length}
+                    </h2>
+                )} 
+                {expanded && subchapters && subchapterInfo && (
+                    <div className="subchapter-container">
+                        {subchapterInfo.map((subchapter) => (
+                            <ChapterDisplay key={subchapter.id} chapterInfo={subchapter} />
+                        ))}
+                    </div>
+                )}
             </div>
         );
     }
