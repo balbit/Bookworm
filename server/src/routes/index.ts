@@ -152,13 +152,11 @@ router.get('/getBookInfo', async (req: Request, res: Response) => {
  *         description: The chapter ID
  *     responses:
  *       200:
- *         description: Pages of the chapter
+ *         description: Link to pages of the chapter, merged into a single PDF
  *         content:
  *           application/json:
  *             schema:
- *               type: array
- *               items:
- *                 type: string
+ *               type: string
  *       400:
  *         description: Invalid or missing id parameter
  *       500:

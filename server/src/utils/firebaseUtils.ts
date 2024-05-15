@@ -22,8 +22,11 @@ export async function getBookInfo(bookId: string) {
 
 export async function getChapterPages(chapterId: string): Promise<string> {
     const chapterInfo = await fetchChapterInfo(chapterId);
-    const pageList = Array.from({ length: chapterInfo.range[1] }, (_, i) => i + chapterInfo.range[0]);
-    return getPagesFromFirebase(chapterInfo.metadata.book, chapterInfo.range);
+    console.log(chapterInfo.range)
+    // TODO: Make this offset dynamic
+    const offset = 21; // Offset to match the page numbering in the DDIA PDF
+    const pageList = Array.from({ length: chapterInfo.range[1] - chapterInfo.range[0] }, (_, i) => i + chapterInfo.range[0] + offset);
+    return getPagesFromFirebase(chapterInfo.metadata.book, pageList);
 }
 
 async function getSubchaptersInfo(chapterId: string): Promise<Record<string, any> > {
