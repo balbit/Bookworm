@@ -54,4 +54,4 @@ def initial_user_upload():
 if __name__ == '__main__':
     # initial_user_upload()
     initial_book_upload()
-    # initial_chapters_upload()
+    initial_chapters_upload()

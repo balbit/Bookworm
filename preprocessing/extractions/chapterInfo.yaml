@@ -1,1147 +1,863 @@
-- id: chapter-XKbs6i
+- id: chapter-iS7XPL
   metadata:
     book: book-8Q7HM3
     depth: 1
   range:
-  - 3
-  - 151
+  - 25
+  - 173
   subchapters:
-  - chapter-EJYyCe
-  - chapter-cve24u
-  - chapter-NnwnZF
-  - chapter-HsWu6B
-  - chapter-HagzfL
-  - chapter-W2TbcM
-  - chapter-oAS7CW
-  - chapter-hiAhyj
-  - chapter-HUUNb5
-  - chapter-7k7y8B
-  - chapter-ixMMYr
-  - chapter-NtRUUB
-  - chapter-3ndt4N
-  - chapter-Y65mig
-  - chapter-6SY4J9
-  - chapter-GXgy5m
-  - chapter-Hoe7Ry
-  - chapter-cXCkCx
-  - chapter-mxoCBg
-  - chapter-RQNpk6
-  - chapter-3p7TeL
-  - chapter-DH5qts
-  - chapter-Qrvyww
-  - chapter-BWdo6y
-  - chapter-A38DnU
-  - chapter-MfwUdA
-  - chapter-AevqMZ
-  - chapter-AixH2h
-  - chapter-ZF9Gbb
-  - chapter-GUea5J
-  - chapter-Qr9w6c
-  - chapter-JiqyuD
-  - chapter-8i6CHM
-  - chapter-J2xPXi
-  - chapter-9AfJVk
-  - chapter-PatNpq
-  - chapter-nzEf3V
-  - chapter-ESNGsd
-  - chapter-oDFMu7
-  - chapter-CZcLYj
-  - chapter-U2dbLg
-  - chapter-JEeewM
-  - chapter-jAFdUy
-  - chapter-FD4tfN
-  - chapter-jHFk2S
-  - chapter-Yoko9V
-  - chapter-Dq473z
-  - chapter-9VUTSJ
-  - chapter-gn6Hfj
-  - chapter-exi5xq
-  - chapter-4oiHUz
-  - chapter-Xqt6WV
-  - chapter-5ypUsw
-  - chapter-YXgkqj
-  - chapter-LbYMr4
-  - chapter-TLzbxD
-  - chapter-Pt774U
-  - chapter-mqMbd2
-  - chapter-k3ooGq
-  - chapter-URerKX
-  - chapter-Vuo8q4
+  - chapter-2WCjrU
+  - chapter-fzKvQt
+  - chapter-Phyw5N
+  - chapter-4jepLU
   title: Foundations of Data Systems
-- id: chapter-EJYyCe
+- id: chapter-2WCjrU
   metadata:
     book: book-8Q7HM3
     depth: 2
   range:
-  - 3
-  - 22
+  - 25
+  - 49
   subchapters:
-  - chapter-cve24u
-  - chapter-NnwnZF
-  - chapter-HsWu6B
-  - chapter-HagzfL
-  - chapter-W2TbcM
-  - chapter-oAS7CW
-  - chapter-hiAhyj
-  - chapter-HUUNb5
-  - chapter-7k7y8B
-  - chapter-ixMMYr
-  - chapter-NtRUUB
-  - chapter-3ndt4N
-  - chapter-Y65mig
-  - chapter-6SY4J9
+  - chapter-9iuQtV
+  - chapter-iEeve8
+  - chapter-CyyJkU
+  - chapter-cMvGBU
+  - chapter-N7ckey
   title: Reliable, Scalable, and Maintainable Applications
-- id: chapter-cve24u
+- id: chapter-9iuQtV
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 4
-  - 6
+  - 26
+  - 28
   subchapters: []
   title: Thinking About Data Systems
-- id: chapter-NnwnZF
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 6
-  - 7
-  subchapters: []
-  title: Reliability
-- id: chapter-HsWu6B
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 7
-  - 8
-  subchapters: []
-  title: Hardware Faults
-- id: chapter-HagzfL
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 8
-  - 9
-  subchapters: []
-  title: Software Errors
-- id: chapter-W2TbcM
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 9
-  - 10
-  subchapters: []
-  title: Human Errors
-- id: chapter-oAS7CW
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 10
-  - 10
-  subchapters: []
-  title: How Important Is Reliability?
-- id: chapter-hiAhyj
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 10
-  - 11
-  subchapters: []
-  title: Scalability
-- id: chapter-HUUNb5
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 11
-  - 13
-  subchapters: []
-  title: Describing Load
-- id: chapter-7k7y8B
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 13
-  - 17
-  subchapters: []
-  title: Describing Performance
-- id: chapter-ixMMYr
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 17
-  - 18
-  subchapters: []
-  title: Approaches for Coping with Load
-- id: chapter-NtRUUB
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 18
-  - 19
-  subchapters: []
-  title: Maintainability
-- id: chapter-3ndt4N
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 19
-  - 20
-  subchapters: []
-  title: 'Operability: Making Life Easy for Operations'
-- id: chapter-Y65mig
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 20
-  - 21
-  subchapters: []
-  title: 'Simplicity: Managing Complexity'
-- id: chapter-6SY4J9
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 21
-  - 3
-  subchapters: []
-  title: 'Evolvability: Making Change Easy'
-- id: chapter-GXgy5m
-  metadata:
-    book: book-8Q7HM3
-    depth: 2
-  range:
-  - 22
-  - 27
-  subchapters: []
-  title: Summary
-- id: chapter-Hoe7Ry
-  metadata:
-    book: book-8Q7HM3
-    depth: 2
-  range:
-  - 27
-  - 63
-  subchapters:
-  - chapter-cXCkCx
-  - chapter-mxoCBg
-  - chapter-RQNpk6
-  - chapter-3p7TeL
-  - chapter-DH5qts
-  - chapter-Qrvyww
-  - chapter-BWdo6y
-  - chapter-A38DnU
-  - chapter-MfwUdA
-  - chapter-AevqMZ
-  - chapter-AixH2h
-  - chapter-ZF9Gbb
-  - chapter-GUea5J
-  - chapter-Qr9w6c
-  - chapter-JiqyuD
-  title: Data Models and Query Languages
-- id: chapter-cXCkCx
+- id: chapter-iEeve8
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
   - 28
+  - 32
+  subchapters:
+  - chapter-BwuMXy
+  - chapter-Pz56tA
+  - chapter-KeCDqo
+  - chapter-FnSdua
+  title: Reliability
+- id: chapter-BwuMXy
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
   - 29
+  - 30
+  subchapters: []
+  title: Hardware Faults
+- id: chapter-Pz56tA
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 30
+  - 31
+  subchapters: []
+  title: Software Errors
+- id: chapter-KeCDqo
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 31
+  - 32
+  subchapters: []
+  title: Human Errors
+- id: chapter-FnSdua
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 32
+  - 28
+  subchapters: []
+  title: How Important Is Reliability?
+- id: chapter-CyyJkU
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 32
+  - 40
+  subchapters:
+  - chapter-bFQgGr
+  - chapter-kDJhRn
+  - chapter-FjZ4u4
+  title: Scalability
+- id: chapter-bFQgGr
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 33
+  - 35
+  subchapters: []
+  title: Describing Load
+- id: chapter-kDJhRn
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 35
+  - 39
+  subchapters: []
+  title: Describing Performance
+- id: chapter-FjZ4u4
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 39
+  - 32
+  subchapters: []
+  title: Approaches for Coping with Load
+- id: chapter-cMvGBU
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 40
+  - 44
+  subchapters:
+  - chapter-jFy4Ap
+  - chapter-h2bHE3
+  - chapter-2P3myC
+  title: Maintainability
+- id: chapter-jFy4Ap
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 41
+  - 42
+  subchapters: []
+  title: 'Operability: Making Life Easy for Operations'
+- id: chapter-h2bHE3
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 42
+  - 43
+  subchapters: []
+  title: 'Simplicity: Managing Complexity'
+- id: chapter-2P3myC
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 43
+  - 40
+  subchapters: []
+  title: 'Evolvability: Making Change Easy'
+- id: chapter-N7ckey
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 44
+  - 25
+  subchapters: []
+  title: Summary
+- id: chapter-fzKvQt
+  metadata:
+    book: book-8Q7HM3
+    depth: 2
+  range:
+  - 49
+  - 91
+  subchapters:
+  - chapter-jbn2cP
+  - chapter-aNnDho
+  - chapter-LB7GZ8
+  - chapter-GEtafk
+  - chapter-eHKGN7
+  - chapter-BuPUrH
+  - chapter-KxyR4p
+  - chapter-mbGZ8V
+  - chapter-85qaGX
+  title: Data Models and Query Languages
+- id: chapter-jbn2cP
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 50
+  - 51
   subchapters: []
   title: Relational Model Versus Document Model
-- id: chapter-mxoCBg
+- id: chapter-aNnDho
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 29
-  - 29
+  - 51
+  - 51
   subchapters: []
   title: The Birth of NoSQL
-- id: chapter-RQNpk6
+- id: chapter-LB7GZ8
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 29
-  - 33
+  - 51
+  - 55
   subchapters: []
   title: The Object-Relational Mismatch
-- id: chapter-3p7TeL
+- id: chapter-GEtafk
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 33
-  - 36
+  - 55
+  - 58
   subchapters: []
   title: Many-to-One and Many-to-Many Relationships
-- id: chapter-DH5qts
+- id: chapter-eHKGN7
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 36
-  - 38
+  - 58
+  - 60
   subchapters: []
   title: Are Document Databases Repeating History?
-- id: chapter-Qrvyww
+- id: chapter-BuPUrH
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 38
-  - 42
+  - 60
+  - 64
   subchapters: []
   title: Relational Versus Document Databases Today
-- id: chapter-BWdo6y
+- id: chapter-KxyR4p
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 42
-  - 44
-  subchapters: []
+  - 64
+  - 71
+  subchapters:
+  - chapter-Tsskdn
+  - chapter-fsZaU4
   title: Query Languages for Data
-- id: chapter-A38DnU
+- id: chapter-Tsskdn
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 44
-  - 46
+  - 66
+  - 68
   subchapters: []
   title: Declarative Queries on the Web
-- id: chapter-MfwUdA
+- id: chapter-fsZaU4
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 46
-  - 49
+  - 68
+  - 64
   subchapters: []
   title: MapReduce Querying
-- id: chapter-AevqMZ
+- id: chapter-mbGZ8V
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 49
-  - 50
-  subchapters: []
+  - 71
+  - 85
+  subchapters:
+  - chapter-FZq67C
+  - chapter-QpShUi
+  - chapter-cGi5EG
+  - chapter-6pjNie
+  - chapter-9k7L6R
   title: Graph-Like Data Models
-- id: chapter-AixH2h
+- id: chapter-FZq67C
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 50
-  - 52
+  - 72
+  - 74
   subchapters: []
   title: Property Graphs
-- id: chapter-ZF9Gbb
+- id: chapter-QpShUi
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 52
-  - 53
+  - 74
+  - 75
   subchapters: []
   title: The Cypher Query Language
-- id: chapter-GUea5J
+- id: chapter-cGi5EG
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 53
-  - 55
+  - 75
+  - 77
   subchapters: []
   title: Graph Queries in SQL
-- id: chapter-Qr9w6c
+- id: chapter-6pjNie
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 55
-  - 60
+  - 77
+  - 82
   subchapters: []
   title: Triple-Stores and SPARQL
-- id: chapter-JiqyuD
+- id: chapter-9k7L6R
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 60
-  - 27
+  - 82
+  - 71
   subchapters: []
   title: 'The Foundation: Datalog'
-- id: chapter-8i6CHM
+- id: chapter-85qaGX
   metadata:
     book: book-8Q7HM3
-    depth: 2
+    depth: 3
   range:
-  - 63
-  - 69
+  - 85
+  - 49
   subchapters: []
   title: Summary
-- id: chapter-J2xPXi
+- id: chapter-Phyw5N
   metadata:
     book: book-8Q7HM3
     depth: 2
   range:
-  - 69
-  - 103
+  - 91
+  - 133
   subchapters:
-  - chapter-9AfJVk
-  - chapter-PatNpq
-  - chapter-nzEf3V
-  - chapter-ESNGsd
-  - chapter-oDFMu7
-  - chapter-CZcLYj
-  - chapter-U2dbLg
-  - chapter-JEeewM
-  - chapter-jAFdUy
-  - chapter-FD4tfN
-  - chapter-jHFk2S
-  - chapter-Yoko9V
-  - chapter-Dq473z
-  - chapter-9VUTSJ
+  - chapter-bBBAwh
+  - chapter-VDuGWC
+  - chapter-RRqTKa
   title: Storage and Retrieval
-- id: chapter-9AfJVk
+- id: chapter-bBBAwh
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 70
-  - 72
-  subchapters: []
+  - 92
+  - 112
+  subchapters:
+  - chapter-oQp486
+  - chapter-bBSgCu
+  - chapter-Z8C2uP
+  - chapter-SwRPQt
+  - chapter-oKaqPK
   title: Data Structures That Power Your Database
-- id: chapter-PatNpq
+- id: chapter-oQp486
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 72
-  - 76
+  - 94
+  - 98
   subchapters: []
   title: Hash Indexes
-- id: chapter-nzEf3V
+- id: chapter-bBSgCu
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 76
-  - 79
+  - 98
+  - 101
   subchapters: []
   title: SSTables and LSM-Trees
-- id: chapter-ESNGsd
+- id: chapter-Z8C2uP
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 79
-  - 83
+  - 101
+  - 105
   subchapters: []
   title: B-Trees
-- id: chapter-oDFMu7
+- id: chapter-SwRPQt
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 83
-  - 85
+  - 105
+  - 107
   subchapters: []
   title: Comparing B-Trees and LSM-Trees
-- id: chapter-CZcLYj
+- id: chapter-oKaqPK
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 85
-  - 90
+  - 107
+  - 92
   subchapters: []
   title: Other Indexing Structures
-- id: chapter-U2dbLg
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 90
-  - 91
-  subchapters: []
-  title: Transaction Processing or Analytics?
-- id: chapter-JEeewM
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 91
-  - 93
-  subchapters: []
-  title: Data Warehousing
-- id: chapter-jAFdUy
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 93
-  - 95
-  subchapters: []
-  title: 'Stars and Snowflakes: Schemas for Analytics'
-- id: chapter-FD4tfN
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 95
-  - 97
-  subchapters: []
-  title: Column-Oriented Storage
-- id: chapter-jHFk2S
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 97
-  - 99
-  subchapters: []
-  title: Column Compression
-- id: chapter-Yoko9V
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 99
-  - 101
-  subchapters: []
-  title: Sort Order in Column Storage
-- id: chapter-Dq473z
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 101
-  - 101
-  subchapters: []
-  title: Writing to Column-Oriented Storage
-- id: chapter-9VUTSJ
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 101
-  - 69
-  subchapters: []
-  title: 'Aggregation: Data Cubes and Materialized Views'
-- id: chapter-gn6Hfj
-  metadata:
-    book: book-8Q7HM3
-    depth: 2
-  range:
-  - 103
-  - 111
-  subchapters: []
-  title: Summary
-- id: chapter-exi5xq
-  metadata:
-    book: book-8Q7HM3
-    depth: 2
-  range:
-  - 111
-  - 139
-  subchapters:
-  - chapter-4oiHUz
-  - chapter-Xqt6WV
-  - chapter-5ypUsw
-  - chapter-YXgkqj
-  - chapter-LbYMr4
-  - chapter-TLzbxD
-  - chapter-Pt774U
-  - chapter-mqMbd2
-  - chapter-k3ooGq
-  - chapter-URerKX
-  title: Encoding and Evolution
-- id: chapter-4oiHUz
+- id: chapter-VDuGWC
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
   - 112
-  - 113
-  subchapters: []
-  title: Formats for Encoding Data
-- id: chapter-Xqt6WV
+  - 125
+  subchapters:
+  - chapter-eiyfFK
+  - chapter-g9i38b
+  - chapter-VY2hnb
+  - chapter-3oudig
+  - chapter-ApQUwR
+  - chapter-UYBkm6
+  - chapter-FydCtS
+  title: Transaction Processing or Analytics?
+- id: chapter-eiyfFK
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
   - 113
-  - 114
+  - 115
   subchapters: []
-  title: Language-Specific Formats
-- id: chapter-5ypUsw
+  title: Data Warehousing
+- id: chapter-g9i38b
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 114
+  - 115
   - 117
   subchapters: []
-  title: JSON, XML, and Binary Variants
-- id: chapter-YXgkqj
+  title: 'Stars and Snowflakes: Schemas for Analytics'
+- id: chapter-VY2hnb
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
   - 117
-  - 122
+  - 119
   subchapters: []
-  title: Thrift and Protocol Buffers
-- id: chapter-LbYMr4
+  title: Column-Oriented Storage
+- id: chapter-3oudig
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 119
+  - 121
+  subchapters: []
+  title: Column Compression
+- id: chapter-ApQUwR
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 121
+  - 123
+  subchapters: []
+  title: Sort Order in Column Storage
+- id: chapter-UYBkm6
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 123
+  - 123
+  subchapters: []
+  title: Writing to Column-Oriented Storage
+- id: chapter-FydCtS
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 123
+  - 112
+  subchapters: []
+  title: 'Aggregation: Data Cubes and Materialized Views'
+- id: chapter-RRqTKa
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 122
-  - 127
+  - 125
+  - 91
   subchapters: []
-  title: Avro
-- id: chapter-TLzbxD
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 127
-  - 128
-  subchapters: []
-  title: The Merits of Schemas
-- id: chapter-Pt774U
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 128
-  - 129
-  subchapters: []
-  title: Modes of Dataflow
-- id: chapter-mqMbd2
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 129
-  - 131
-  subchapters: []
-  title: Dataflow Through Databases
-- id: chapter-k3ooGq
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 131
-  - 136
-  subchapters: []
-  title: 'Dataflow Through Services: REST and RPC'
-- id: chapter-URerKX
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 136
-  - 111
-  subchapters: []
-  title: Message-Passing Dataflow
-- id: chapter-Vuo8q4
+  title: Summary
+- id: chapter-4jepLU
   metadata:
     book: book-8Q7HM3
     depth: 2
   range:
+  - 133
+  - 25
+  subchapters:
+  - chapter-M5iNfR
+  - chapter-NJRK6m
+  title: Encoding and Evolution
+- id: chapter-M5iNfR
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 134
+  - 161
+  subchapters:
+  - chapter-GgubuX
+  - chapter-4Nx4MQ
+  - chapter-gGG5Np
+  - chapter-6h6u9a
+  - chapter-RYdF6H
+  - chapter-JWDgup
+  title: Formats for Encoding Data
+- id: chapter-GgubuX
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 135
+  - 136
+  subchapters: []
+  title: Language-Specific Formats
+- id: chapter-4Nx4MQ
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 136
   - 139
-  - 3
+  subchapters: []
+  title: JSON, XML, and Binary Variants
+- id: chapter-gGG5Np
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 139
+  - 144
+  subchapters: []
+  title: Thrift and Protocol Buffers
+- id: chapter-6h6u9a
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 144
+  - 149
+  subchapters: []
+  title: Avro
+- id: chapter-RYdF6H
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 149
+  - 150
+  subchapters: []
+  title: The Merits of Schemas
+- id: chapter-JWDgup
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 150
+  - 134
+  subchapters:
+  - chapter-McEApr
+  - chapter-NbaidF
+  - chapter-fSi7Bw
+  title: Modes of Dataflow
+- id: chapter-McEApr
+  metadata:
+    book: book-8Q7HM3
+    depth: 5
+  range:
+  - 151
+  - 153
+  subchapters: []
+  title: Dataflow Through Databases
+- id: chapter-NbaidF
+  metadata:
+    book: book-8Q7HM3
+    depth: 5
+  range:
+  - 153
+  - 158
+  subchapters: []
+  title: 'Dataflow Through Services: REST and RPC'
+- id: chapter-fSi7Bw
+  metadata:
+    book: book-8Q7HM3
+    depth: 5
+  range:
+  - 158
+  - 150
+  subchapters: []
+  title: Message-Passing Dataflow
+- id: chapter-NJRK6m
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 161
+  - 133
   subchapters: []
   title: Summary
-- id: chapter-4wHZ6n
+- id: chapter-TNZgFM
   metadata:
     book: book-8Q7HM3
     depth: 1
   range:
-  - 151
-  - 389
+  - 173
+  - 411
   subchapters:
-  - chapter-4cpwWT
-  - chapter-m54S3g
-  - chapter-F7HzzP
-  - chapter-d6Nm2t
-  - chapter-X5h6S5
-  - chapter-7DuBEJ
-  - chapter-e6iyuh
-  - chapter-jB5SQj
-  - chapter-8p7BAQ
-  - chapter-bPNyBk
-  - chapter-4KZNvU
-  - chapter-V4aSXA
-  - chapter-HruDQH
-  - chapter-G6VCSS
-  - chapter-FtfE8p
-  - chapter-ZYt9GA
-  - chapter-jzkaEa
-  - chapter-2MHuWV
-  - chapter-WvFCyf
-  - chapter-8xPtJd
-  - chapter-apWSeh
-  - chapter-gm8YsN
-  - chapter-Xj9D7f
-  - chapter-cTB2ME
-  - chapter-EWLrFh
-  - chapter-BkDMAo
-  - chapter-9VAWvf
-  - chapter-hm3HKk
-  - chapter-YPK9bM
-  - chapter-4S7ehe
-  - chapter-gFzfzZ
-  - chapter-SgDAcy
-  - chapter-EUMCyG
-  - chapter-W2MkRj
-  - chapter-Nvw2s9
-  - chapter-kWTtm6
-  - chapter-CL8wgP
-  - chapter-hs3KKx
-  - chapter-2WtnnY
-  - chapter-8EXfUz
-  - chapter-kBNvWt
-  - chapter-GixqL9
-  - chapter-G3PjbB
-  - chapter-39f8od
-  - chapter-bnpRhy
-  - chapter-WoLRVW
-  - chapter-kjCd8W
-  - chapter-ZG7ZZS
-  - chapter-Jwt9Ut
-  - chapter-AN4k7a
-  - chapter-jbY7s4
-  - chapter-XkVNav
-  - chapter-fBfJud
-  - chapter-JzN3pW
-  - chapter-HBZzoc
-  - chapter-VaqJnr
-  - chapter-SoktNa
-  - chapter-AUk9fL
-  - chapter-Z4Kano
-  - chapter-TWe7Kf
-  - chapter-kB2Wi4
-  - chapter-SqWvpH
-  - chapter-KnGst8
-  - chapter-3uA6bR
-  - chapter-AtyVnA
-  - chapter-TgGEyt
-  - chapter-Ybznno
-  - chapter-XJMjPj
-  - chapter-AhSCsi
-  - chapter-h8piVR
-  - chapter-GhLcUk
-  - chapter-VK5syS
-  - chapter-Wy2Cmb
-  - chapter-JkgyTQ
-  - chapter-NVMnVa
-  - chapter-BfHfjV
-  - chapter-hn478m
-  - chapter-RU3X3H
-  - chapter-3yaxR7
-  - chapter-AL5GfQ
-  - chapter-Mhu47g
-  - chapter-EBvG8z
-  - chapter-EAAD2y
-  - chapter-U9fDT7
-  - chapter-T7B7Ex
+  - chapter-GwcH6u
+  - chapter-jhtjFW
+  - chapter-afnSMC
+  - chapter-a5qk4M
+  - chapter-PUT4MR
   title: Distributed Data
-- id: chapter-4cpwWT
+- id: chapter-GwcH6u
   metadata:
     book: book-8Q7HM3
     depth: 2
   range:
-  - 151
-  - 192
+  - 173
+  - 221
   subchapters:
-  - chapter-m54S3g
-  - chapter-F7HzzP
-  - chapter-d6Nm2t
-  - chapter-X5h6S5
-  - chapter-7DuBEJ
-  - chapter-e6iyuh
-  - chapter-jB5SQj
-  - chapter-8p7BAQ
-  - chapter-bPNyBk
-  - chapter-4KZNvU
-  - chapter-V4aSXA
-  - chapter-HruDQH
-  - chapter-G6VCSS
-  - chapter-FtfE8p
-  - chapter-ZYt9GA
-  - chapter-jzkaEa
-  - chapter-2MHuWV
-  - chapter-WvFCyf
-  - chapter-8xPtJd
+  - chapter-mF4iiP
+  - chapter-T59d3G
+  - chapter-URfsRt
+  - chapter-N89fGs
+  - chapter-C3XPHs
+  - chapter-ZhK5YU
+  - chapter-DsYo2z
+  - chapter-eKq7AT
+  - chapter-8MWx5L
+  - chapter-BLLXCj
+  - chapter-EPomT2
+  - chapter-5XTbP7
+  - chapter-EDQq9c
   title: Replication
-- id: chapter-m54S3g
+- id: chapter-mF4iiP
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 152
-  - 153
+  - 174
+  - 175
   subchapters: []
   title: Leaders and Followers
-- id: chapter-F7HzzP
+- id: chapter-T59d3G
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 153
-  - 155
+  - 175
+  - 177
   subchapters: []
   title: Synchronous Versus Asynchronous Replication
-- id: chapter-d6Nm2t
+- id: chapter-URfsRt
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 155
-  - 156
+  - 177
+  - 178
   subchapters: []
   title: Setting Up New Followers
-- id: chapter-X5h6S5
+- id: chapter-N89fGs
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 156
-  - 158
+  - 178
+  - 180
   subchapters: []
   title: Handling Node Outages
-- id: chapter-7DuBEJ
+- id: chapter-C3XPHs
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 158
-  - 161
+  - 180
+  - 183
   subchapters: []
   title: Implementation of Replication Logs
-- id: chapter-e6iyuh
+- id: chapter-ZhK5YU
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 161
-  - 162
+  - 183
+  - 184
   subchapters: []
   title: Problems with Replication Lag
-- id: chapter-jB5SQj
+- id: chapter-DsYo2z
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 162
-  - 164
+  - 184
+  - 186
   subchapters: []
   title: Reading Your Own Writes
-- id: chapter-8p7BAQ
+- id: chapter-eKq7AT
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 164
-  - 165
+  - 186
+  - 187
   subchapters: []
   title: Monotonic Reads
-- id: chapter-bPNyBk
+- id: chapter-8MWx5L
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 165
-  - 167
+  - 187
+  - 189
   subchapters: []
   title: Consistent Prefix Reads
-- id: chapter-4KZNvU
+- id: chapter-BLLXCj
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 167
-  - 168
+  - 189
+  - 190
   subchapters: []
   title: Solutions for Replication Lag
-- id: chapter-V4aSXA
+- id: chapter-EPomT2
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 168
-  - 168
-  subchapters: []
+  - 190
+  - 199
+  subchapters:
+  - chapter-gJdvEa
+  - chapter-PDAfYw
+  - chapter-AWrKzu
   title: Multi-Leader Replication
-- id: chapter-HruDQH
+- id: chapter-gJdvEa
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 168
-  - 171
+  - 190
+  - 193
   subchapters: []
   title: Use Cases for Multi-Leader Replication
-- id: chapter-G6VCSS
+- id: chapter-PDAfYw
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 171
-  - 175
+  - 193
+  - 197
   subchapters: []
   title: Handling Write Conflicts
-- id: chapter-FtfE8p
+- id: chapter-AWrKzu
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 175
-  - 177
+  - 197
+  - 190
   subchapters: []
   title: Multi-Leader Replication Topologies
-- id: chapter-ZYt9GA
+- id: chapter-5XTbP7
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 177
-  - 177
-  subchapters: []
+  - 199
+  - 214
+  subchapters:
+  - chapter-iZm6KP
+  - chapter-4aRLjz
+  - chapter-be8ujC
+  - chapter-eudvmt
   title: Leaderless Replication
-- id: chapter-jzkaEa
+- id: chapter-iZm6KP
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 177
-  - 181
+  - 199
+  - 203
   subchapters: []
   title: Writing to the Database When a Node Is Down
-- id: chapter-2MHuWV
+- id: chapter-4aRLjz
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 181
-  - 183
+  - 203
+  - 205
   subchapters: []
   title: Limitations of Quorum Consistency
-- id: chapter-WvFCyf
+- id: chapter-be8ujC
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 183
-  - 184
+  - 205
+  - 206
   subchapters: []
   title: Sloppy Quorums and Hinted Handoff
-- id: chapter-8xPtJd
+- id: chapter-eudvmt
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 184
-  - 151
+  - 206
+  - 199
   subchapters: []
   title: Detecting Concurrent Writes
-- id: chapter-apWSeh
+- id: chapter-EDQq9c
   metadata:
     book: book-8Q7HM3
-    depth: 2
+    depth: 3
   range:
-  - 192
-  - 199
+  - 214
+  - 173
   subchapters: []
   title: Summary
-- id: chapter-gm8YsN
+- id: chapter-jhtjFW
   metadata:
     book: book-8Q7HM3
     depth: 2
   range:
-  - 199
-  - 216
+  - 221
+  - 243
   subchapters:
-  - chapter-Xj9D7f
-  - chapter-cTB2ME
-  - chapter-EWLrFh
-  - chapter-BkDMAo
-  - chapter-9VAWvf
-  - chapter-hm3HKk
-  - chapter-YPK9bM
-  - chapter-4S7ehe
-  - chapter-gFzfzZ
-  - chapter-SgDAcy
-  - chapter-EUMCyG
-  - chapter-W2MkRj
-  - chapter-Nvw2s9
+  - chapter-F2uSxe
+  - chapter-KUKjBq
+  - chapter-MtPdcW
+  - chapter-LiMiNG
+  - chapter-bXdfya
+  - chapter-Ug7334
+  - chapter-mEJNNz
+  - chapter-BKSNmh
   title: Partitioning
-- id: chapter-Xj9D7f
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 200
-  - 201
-  subchapters: []
-  title: Partitioning and Replication
-- id: chapter-cTB2ME
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 201
-  - 202
-  subchapters: []
-  title: Partitioning of Key-Value Data
-- id: chapter-EWLrFh
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 202
-  - 203
-  subchapters: []
-  title: Partitioning by Key Range
-- id: chapter-BkDMAo
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 203
-  - 205
-  subchapters: []
-  title: Partitioning by Hash of Key
-- id: chapter-9VAWvf
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 205
-  - 206
-  subchapters: []
-  title: Skewed Workloads and Relieving Hot Spots
-- id: chapter-hm3HKk
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 206
-  - 206
-  subchapters: []
-  title: Partitioning and Secondary Indexes
-- id: chapter-YPK9bM
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 206
-  - 208
-  subchapters: []
-  title: Partitioning Secondary Indexes by Document
-- id: chapter-4S7ehe
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 208
-  - 209
-  subchapters: []
-  title: Partitioning Secondary Indexes by Term
-- id: chapter-gFzfzZ
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 209
-  - 210
-  subchapters: []
-  title: Rebalancing Partitions
-- id: chapter-SgDAcy
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 210
-  - 213
-  subchapters: []
-  title: Strategies for Rebalancing
-- id: chapter-EUMCyG
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 213
-  - 214
-  subchapters: []
-  title: 'Operations: Automatic or Manual Rebalancing'
-- id: chapter-W2MkRj
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 214
-  - 216
-  subchapters: []
-  title: Request Routing
-- id: chapter-Nvw2s9
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 216
-  - 199
-  subchapters: []
-  title: Parallel Query Execution
-- id: chapter-kWTtm6
-  metadata:
-    book: book-8Q7HM3
-    depth: 2
-  range:
-  - 216
-  - 221
-  subchapters: []
-  title: Summary
-- id: chapter-CL8wgP
-  metadata:
-    book: book-8Q7HM3
-    depth: 2
-  range:
-  - 221
-  - 266
-  subchapters:
-  - chapter-hs3KKx
-  - chapter-2WtnnY
-  - chapter-8EXfUz
-  - chapter-kBNvWt
-  - chapter-GixqL9
-  - chapter-G3PjbB
-  - chapter-39f8od
-  - chapter-bnpRhy
-  - chapter-WoLRVW
-  - chapter-kjCd8W
-  - chapter-ZG7ZZS
-  - chapter-Jwt9Ut
-  title: Transactions
-- id: chapter-hs3KKx
+- id: chapter-F2uSxe
   metadata:
     book: book-8Q7HM3
     depth: 3
@@ -1149,978 +865,1093 @@
   - 222
   - 223
   subchapters: []
-  title: The Slippery Concept of a Transaction
-- id: chapter-2WtnnY
+  title: Partitioning and Replication
+- id: chapter-KUKjBq
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
   - 223
+  - 227
+  subchapters:
+  - chapter-fNMsto
+  - chapter-82DFdu
+  title: Partitioning of Key-Value Data
+- id: chapter-fNMsto
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 224
+  - 225
+  subchapters: []
+  title: Partitioning by Key Range
+- id: chapter-82DFdu
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 225
+  - 223
+  subchapters: []
+  title: Partitioning by Hash of Key
+- id: chapter-MtPdcW
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 227
   - 228
   subchapters: []
-  title: The Meaning of ACID
-- id: chapter-8EXfUz
+  title: Skewed Workloads and Relieving Hot Spots
+- id: chapter-LiMiNG
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
   - 228
-  - 233
+  - 231
+  subchapters:
+  - chapter-jaH55k
+  - chapter-A3oGGq
+  title: Partitioning and Secondary Indexes
+- id: chapter-jaH55k
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 228
+  - 230
   subchapters: []
-  title: Single-Object and Multi-Object Operations
-- id: chapter-kBNvWt
+  title: Partitioning Secondary Indexes by Document
+- id: chapter-A3oGGq
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 230
+  - 228
+  subchapters: []
+  title: Partitioning Secondary Indexes by Term
+- id: chapter-bXdfya
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 233
-  - 234
+  - 231
+  - 236
+  subchapters:
+  - chapter-LAdaQB
+  - chapter-LRxi2R
+  title: Rebalancing Partitions
+- id: chapter-LAdaQB
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 232
+  - 235
   subchapters: []
-  title: Weak Isolation Levels
-- id: chapter-GixqL9
+  title: Strategies for Rebalancing
+- id: chapter-LRxi2R
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 235
+  - 231
+  subchapters: []
+  title: 'Operations: Automatic or Manual Rebalancing'
+- id: chapter-Ug7334
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 234
-  - 237
+  - 236
+  - 238
   subchapters: []
-  title: Read Committed
-- id: chapter-G3PjbB
+  title: Request Routing
+- id: chapter-mEJNNz
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 237
-  - 242
+  - 238
+  - 238
   subchapters: []
-  title: Snapshot Isolation and Repeatable Read
-- id: chapter-39f8od
+  title: Parallel Query Execution
+- id: chapter-BKSNmh
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 242
-  - 246
-  subchapters: []
-  title: Preventing Lost Updates
-- id: chapter-bnpRhy
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 246
-  - 251
-  subchapters: []
-  title: Write Skew and Phantoms
-- id: chapter-WoLRVW
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 251
-  - 252
-  subchapters: []
-  title: Serializability
-- id: chapter-kjCd8W
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 252
-  - 257
-  subchapters: []
-  title: Actual Serial Execution
-- id: chapter-ZG7ZZS
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 257
-  - 261
-  subchapters: []
-  title: Two-Phase Locking (2PL)
-- id: chapter-Jwt9Ut
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 261
+  - 238
   - 221
   subchapters: []
-  title: Serializable Snapshot Isolation (SSI)
-- id: chapter-AN4k7a
-  metadata:
-    book: book-8Q7HM3
-    depth: 2
-  range:
-  - 266
-  - 273
-  subchapters: []
   title: Summary
-- id: chapter-jbY7s4
+- id: chapter-afnSMC
   metadata:
     book: book-8Q7HM3
     depth: 2
   range:
-  - 273
-  - 310
+  - 243
+  - 295
   subchapters:
-  - chapter-XkVNav
-  - chapter-fBfJud
-  - chapter-JzN3pW
-  - chapter-HBZzoc
-  - chapter-VaqJnr
-  - chapter-SoktNa
-  - chapter-AUk9fL
-  - chapter-Z4Kano
-  - chapter-TWe7Kf
-  - chapter-kB2Wi4
-  - chapter-SqWvpH
-  - chapter-KnGst8
-  - chapter-3uA6bR
-  - chapter-AtyVnA
-  - chapter-TgGEyt
-  - chapter-Ybznno
-  title: The Trouble with Distributed Systems
-- id: chapter-XkVNav
+  - chapter-fzHx5p
+  - chapter-NCCPLB
+  - chapter-drQkrv
+  - chapter-Vz2Few
+  - chapter-XWkNwy
+  - chapter-oLjovz
+  title: Transactions
+- id: chapter-fzHx5p
   metadata:
     book: book-8Q7HM3
     depth: 3
+  range:
+  - 244
+  - 245
+  subchapters: []
+  title: The Slippery Concept of a Transaction
+- id: chapter-NCCPLB
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 245
+  - 250
+  subchapters: []
+  title: The Meaning of ACID
+- id: chapter-drQkrv
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 250
+  - 255
+  subchapters: []
+  title: Single-Object and Multi-Object Operations
+- id: chapter-Vz2Few
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 255
+  - 273
+  subchapters:
+  - chapter-cMPZpA
+  - chapter-oQToX9
+  - chapter-8qHNNC
+  - chapter-gnpMT8
+  title: Weak Isolation Levels
+- id: chapter-cMPZpA
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 256
+  - 259
+  subchapters: []
+  title: Read Committed
+- id: chapter-oQToX9
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 259
+  - 264
+  subchapters: []
+  title: Snapshot Isolation and Repeatable Read
+- id: chapter-8qHNNC
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 264
+  - 268
+  subchapters: []
+  title: Preventing Lost Updates
+- id: chapter-gnpMT8
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 268
+  - 255
+  subchapters: []
+  title: Write Skew and Phantoms
+- id: chapter-XWkNwy
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 273
+  - 288
+  subchapters:
+  - chapter-aRaa8k
+  - chapter-U9mUCw
+  - chapter-HdPbzy
+  title: Serializability
+- id: chapter-aRaa8k
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
   range:
   - 274
-  - 275
-  subchapters: []
-  title: Faults and Partial Failures
-- id: chapter-fBfJud
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 275
-  - 277
-  subchapters: []
-  title: Cloud Computing and Supercomputing
-- id: chapter-JzN3pW
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 277
   - 279
   subchapters: []
-  title: Unreliable Networks
-- id: chapter-HBZzoc
+  title: Actual Serial Execution
+- id: chapter-U9mUCw
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
   - 279
-  - 280
+  - 283
   subchapters: []
-  title: Network Faults in Practice
-- id: chapter-VaqJnr
+  title: Two-Phase Locking (2PL)
+- id: chapter-HdPbzy
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 280
-  - 281
-  subchapters: []
-  title: Detecting Faults
-- id: chapter-SoktNa
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 281
-  - 284
-  subchapters: []
-  title: Timeouts and Unbounded Delays
-- id: chapter-AUk9fL
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 284
-  - 287
-  subchapters: []
-  title: Synchronous Versus Asynchronous Networks
-- id: chapter-Z4Kano
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 287
-  - 288
-  subchapters: []
-  title: Unreliable Clocks
-- id: chapter-TWe7Kf
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 288
-  - 289
-  subchapters: []
-  title: Monotonic Versus Time-of-Day Clocks
-- id: chapter-kB2Wi4
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 289
-  - 291
-  subchapters: []
-  title: Clock Synchronization and Accuracy
-- id: chapter-SqWvpH
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 291
-  - 295
-  subchapters: []
-  title: Relying on Synchronized Clocks
-- id: chapter-KnGst8
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 295
-  - 300
-  subchapters: []
-  title: Process Pauses
-- id: chapter-3uA6bR
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 300
-  - 300
-  subchapters: []
-  title: Knowledge, Truth, and Lies
-- id: chapter-AtyVnA
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 300
-  - 304
-  subchapters: []
-  title: The Truth Is Defined by the Majority
-- id: chapter-TgGEyt
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 304
-  - 306
-  subchapters: []
-  title: Byzantine Faults
-- id: chapter-Ybznno
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 306
+  - 283
   - 273
   subchapters: []
-  title: System Model and Reality
-- id: chapter-XJMjPj
+  title: Serializable Snapshot Isolation (SSI)
+- id: chapter-oLjovz
   metadata:
     book: book-8Q7HM3
-    depth: 2
+    depth: 3
   range:
-  - 310
-  - 321
+  - 288
+  - 243
   subchapters: []
   title: Summary
-- id: chapter-AhSCsi
+- id: chapter-a5qk4M
   metadata:
     book: book-8Q7HM3
     depth: 2
   range:
-  - 321
-  - 373
+  - 295
+  - 343
   subchapters:
-  - chapter-h8piVR
-  - chapter-GhLcUk
-  - chapter-VK5syS
-  - chapter-Wy2Cmb
-  - chapter-JkgyTQ
-  - chapter-NVMnVa
-  - chapter-BfHfjV
-  - chapter-hn478m
-  - chapter-RU3X3H
-  - chapter-3yaxR7
-  - chapter-AL5GfQ
-  - chapter-Mhu47g
-  - chapter-EBvG8z
-  - chapter-EAAD2y
-  - chapter-U9fDT7
-  title: Consistency and Consensus
-- id: chapter-h8piVR
+  - chapter-Y78og7
+  - chapter-PN3hsp
+  - chapter-2tppBr
+  - chapter-Gn9ovY
+  - chapter-N9z4tH
+  - chapter-5QxMy8
+  - chapter-JS6uWP
+  title: The Trouble with Distributed Systems
+- id: chapter-Y78og7
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 296
+  - 297
+  subchapters: []
+  title: Faults and Partial Failures
+- id: chapter-PN3hsp
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 297
+  - 299
+  subchapters: []
+  title: Cloud Computing and Supercomputing
+- id: chapter-2tppBr
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 299
+  - 309
+  subchapters:
+  - chapter-TygCLE
+  - chapter-Zc94hx
+  - chapter-PR4edr
+  - chapter-LZ8Hz5
+  title: Unreliable Networks
+- id: chapter-TygCLE
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 301
+  - 302
+  subchapters: []
+  title: Network Faults in Practice
+- id: chapter-Zc94hx
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 302
+  - 303
+  subchapters: []
+  title: Detecting Faults
+- id: chapter-PR4edr
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 303
+  - 306
+  subchapters: []
+  title: Timeouts and Unbounded Delays
+- id: chapter-LZ8Hz5
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 306
+  - 299
+  subchapters: []
+  title: Synchronous Versus Asynchronous Networks
+- id: chapter-Gn9ovY
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 309
+  - 317
+  subchapters:
+  - chapter-87LvwK
+  - chapter-mT5n8y
+  - chapter-avX4Sr
+  title: Unreliable Clocks
+- id: chapter-87LvwK
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 310
+  - 311
+  subchapters: []
+  title: Monotonic Versus Time-of-Day Clocks
+- id: chapter-mT5n8y
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 311
+  - 313
+  subchapters: []
+  title: Clock Synchronization and Accuracy
+- id: chapter-avX4Sr
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 313
+  - 309
+  subchapters: []
+  title: Relying on Synchronized Clocks
+- id: chapter-N9z4tH
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 317
+  - 322
+  subchapters: []
+  title: Process Pauses
+- id: chapter-5QxMy8
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
   - 322
-  - 324
-  subchapters: []
-  title: Consistency Guarantees
-- id: chapter-GhLcUk
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 324
-  - 325
-  subchapters: []
-  title: Linearizability
-- id: chapter-VK5syS
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 325
-  - 330
-  subchapters: []
-  title: What Makes a System Linearizable?
-- id: chapter-Wy2Cmb
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 330
   - 332
+  subchapters:
+  - chapter-NcJ88G
+  - chapter-BQrHLF
+  - chapter-4g2aAT
+  title: Knowledge, Truth, and Lies
+- id: chapter-NcJ88G
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 322
+  - 326
   subchapters: []
-  title: Relying on Linearizability
-- id: chapter-JkgyTQ
+  title: The Truth Is Defined by the Majority
+- id: chapter-BQrHLF
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 326
+  - 328
+  subchapters: []
+  title: Byzantine Faults
+- id: chapter-4g2aAT
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 328
+  - 322
+  subchapters: []
+  title: System Model and Reality
+- id: chapter-JS6uWP
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
   - 332
-  - 335
+  - 295
   subchapters: []
-  title: Implementing Linearizable Systems
-- id: chapter-NVMnVa
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 335
-  - 339
-  subchapters: []
-  title: The Cost of Linearizability
-- id: chapter-BfHfjV
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 339
-  - 339
-  subchapters: []
-  title: Ordering Guarantees
-- id: chapter-hn478m
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 339
-  - 343
-  subchapters: []
-  title: Ordering and Causality
-- id: chapter-RU3X3H
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 343
-  - 348
-  subchapters: []
-  title: Sequence Number Ordering
-- id: chapter-3yaxR7
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 348
-  - 352
-  subchapters: []
-  title: Total Order Broadcast
-- id: chapter-AL5GfQ
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 352
-  - 354
-  subchapters: []
-  title: Distributed Transactions and Consensus
-- id: chapter-Mhu47g
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 354
-  - 360
-  subchapters: []
-  title: Atomic Commit and Two-Phase Commit (2PC)
-- id: chapter-EBvG8z
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 360
-  - 364
-  subchapters: []
-  title: Distributed Transactions in Practice
-- id: chapter-EAAD2y
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 364
-  - 370
-  subchapters: []
-  title: Fault-Tolerant Consensus
-- id: chapter-U9fDT7
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 370
-  - 321
-  subchapters: []
-  title: Membership and Coordination Services
-- id: chapter-T7B7Ex
+  title: Summary
+- id: chapter-PUT4MR
   metadata:
     book: book-8Q7HM3
     depth: 2
   range:
-  - 373
-  - 151
+  - 343
+  - 173
+  subchapters:
+  - chapter-3EX5S4
+  - chapter-EEmABw
+  - chapter-TcVKXr
+  - chapter-g5eTHh
+  - chapter-NwFjPG
+  title: Consistency and Consensus
+- id: chapter-3EX5S4
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 344
+  - 346
+  subchapters: []
+  title: Consistency Guarantees
+- id: chapter-EEmABw
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 346
+  - 361
+  subchapters:
+  - chapter-ffWrYc
+  - chapter-ZCNoWV
+  - chapter-4oAPqF
+  - chapter-MyHWCV
+  title: Linearizability
+- id: chapter-ffWrYc
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 347
+  - 352
+  subchapters: []
+  title: What Makes a System Linearizable?
+- id: chapter-ZCNoWV
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 352
+  - 354
+  subchapters: []
+  title: Relying on Linearizability
+- id: chapter-4oAPqF
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 354
+  - 357
+  subchapters: []
+  title: Implementing Linearizable Systems
+- id: chapter-MyHWCV
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 357
+  - 346
+  subchapters: []
+  title: The Cost of Linearizability
+- id: chapter-TcVKXr
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 361
+  - 374
+  subchapters:
+  - chapter-mVS8Vn
+  - chapter-PhtQCz
+  - chapter-LtxjMw
+  title: Ordering Guarantees
+- id: chapter-mVS8Vn
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 361
+  - 365
+  subchapters: []
+  title: Ordering and Causality
+- id: chapter-PhtQCz
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 365
+  - 370
+  subchapters: []
+  title: Sequence Number Ordering
+- id: chapter-LtxjMw
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 370
+  - 361
+  subchapters: []
+  title: Total Order Broadcast
+- id: chapter-g5eTHh
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 374
+  - 395
+  subchapters:
+  - chapter-VYW28Q
+  - chapter-3p7KZs
+  - chapter-cpmoe7
+  - chapter-5jHieB
+  title: Distributed Transactions and Consensus
+- id: chapter-VYW28Q
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 376
+  - 382
+  subchapters: []
+  title: Atomic Commit and Two-Phase Commit (2PC)
+- id: chapter-3p7KZs
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 382
+  - 386
+  subchapters: []
+  title: Distributed Transactions in Practice
+- id: chapter-cpmoe7
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 386
+  - 392
+  subchapters: []
+  title: Fault-Tolerant Consensus
+- id: chapter-5jHieB
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 392
+  - 374
+  subchapters: []
+  title: Membership and Coordination Services
+- id: chapter-NwFjPG
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 395
+  - 343
   subchapters: []
   title: Summary
-- id: chapter-PLWncf
+- id: chapter-4dGbzC
   metadata:
     book: book-8Q7HM3
     depth: 1
   range:
-  - 389
-  - 543
+  - 411
+  - 565
   subchapters:
-  - chapter-Tk3jro
-  - chapter-5eVvVY
-  - chapter-QxUrBL
-  - chapter-dUnPCw
-  - chapter-JaFvYJ
-  - chapter-RbUmeZ
-  - chapter-9d6XCe
-  - chapter-hy84Cw
-  - chapter-PLo5aY
-  - chapter-gr5mdh
-  - chapter-E3fkhf
-  - chapter-hZw4Me
-  - chapter-2aRY2k
-  - chapter-B29eor
-  - chapter-cs5MVK
-  - chapter-W7NsMA
-  - chapter-egTHiA
-  - chapter-VXgJXF
-  - chapter-MCx7Xh
-  - chapter-h3dEiX
-  - chapter-ZDiBmv
-  - chapter-XKsCUw
-  - chapter-WpFjpn
-  - chapter-fYpi67
-  - chapter-WuXVyL
-  - chapter-euFXsD
-  - chapter-nBkNry
-  - chapter-HJZZ7n
-  - chapter-CRE4sF
-  - chapter-HLfb6y
-  - chapter-hoA4ep
-  - chapter-H3WGaj
-  - chapter-2HpRWE
-  - chapter-DpSrPa
-  - chapter-YPZZyn
-  - chapter-6f3MRz
-  - chapter-83fTCU
-  - chapter-Lf6UU4
-  - chapter-XjKzLs
-  - chapter-gQHUgb
-  - chapter-TbUY7W
-  - chapter-AK2v2H
-  - chapter-eu9HQV
-  - chapter-UTkjVi
-  - chapter-hnoV6i
-  - chapter-6AHNiB
-  - chapter-YDpxod
+  - chapter-9xkumH
+  - chapter-YDp3fK
+  - chapter-iaHbzq
   title: Derived Data
-- id: chapter-Tk3jro
+- id: chapter-9xkumH
   metadata:
     book: book-8Q7HM3
     depth: 2
   range:
-  - 389
-  - 429
+  - 411
+  - 461
   subchapters:
-  - chapter-5eVvVY
-  - chapter-QxUrBL
-  - chapter-dUnPCw
-  - chapter-JaFvYJ
-  - chapter-RbUmeZ
-  - chapter-9d6XCe
-  - chapter-hy84Cw
-  - chapter-PLo5aY
-  - chapter-gr5mdh
-  - chapter-E3fkhf
-  - chapter-hZw4Me
-  - chapter-2aRY2k
-  - chapter-B29eor
+  - chapter-CFj46E
+  - chapter-hHgCCi
+  - chapter-45ok7V
+  - chapter-PVQDm3
   title: Batch Processing
-- id: chapter-5eVvVY
+- id: chapter-CFj46E
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 391
-  - 391
-  subchapters: []
+  - 413
+  - 419
+  subchapters:
+  - chapter-SurV5A
+  - chapter-PUDNuC
   title: Batch Processing with Unix Tools
-- id: chapter-QxUrBL
+- id: chapter-SurV5A
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 391
-  - 394
+  - 413
+  - 416
   subchapters: []
   title: Simple Log Analysis
-- id: chapter-dUnPCw
+- id: chapter-PUDNuC
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 394
-  - 397
+  - 416
+  - 413
   subchapters: []
   title: The Unix Philosophy
-- id: chapter-JaFvYJ
+- id: chapter-hHgCCi
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 397
-  - 399
-  subchapters: []
+  - 419
+  - 441
+  subchapters:
+  - chapter-WrmB3b
+  - chapter-ayFcge
+  - chapter-HqLzqz
+  - chapter-g3tuB6
+  - chapter-khUYMw
   title: MapReduce and Distributed Filesystems
-- id: chapter-RbUmeZ
+- id: chapter-WrmB3b
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 399
-  - 403
+  - 421
+  - 425
   subchapters: []
   title: MapReduce Job Execution
-- id: chapter-9d6XCe
+- id: chapter-ayFcge
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 403
-  - 408
+  - 425
+  - 430
   subchapters: []
   title: Reduce-Side Joins and Grouping
-- id: chapter-hy84Cw
+- id: chapter-HqLzqz
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 408
-  - 411
+  - 430
+  - 433
   subchapters: []
   title: Map-Side Joins
-- id: chapter-PLo5aY
+- id: chapter-g3tuB6
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 411
-  - 414
+  - 433
+  - 436
   subchapters: []
   title: The Output of Batch Workflows
-- id: chapter-gr5mdh
+- id: chapter-khUYMw
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 414
+  - 436
   - 419
   subchapters: []
   title: Comparing Hadoop to Distributed Databases
-- id: chapter-E3fkhf
+- id: chapter-45ok7V
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 419
-  - 419
-  subchapters: []
+  - 441
+  - 451
+  subchapters:
+  - chapter-FCbKq9
+  - chapter-fkMbH5
+  - chapter-YDcvAV
   title: Beyond MapReduce
-- id: chapter-hZw4Me
+- id: chapter-FCbKq9
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 419
-  - 424
+  - 441
+  - 446
   subchapters: []
   title: Materialization of Intermediate State
-- id: chapter-2aRY2k
+- id: chapter-fkMbH5
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 424
-  - 426
+  - 446
+  - 448
   subchapters: []
   title: Graphs and Iterative Processing
-- id: chapter-B29eor
+- id: chapter-YDcvAV
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 426
-  - 389
+  - 448
+  - 441
   subchapters: []
   title: High-Level APIs and Languages
-- id: chapter-cs5MVK
-  metadata:
-    book: book-8Q7HM3
-    depth: 2
-  range:
-  - 429
-  - 439
-  subchapters: []
-  title: Summary
-- id: chapter-W7NsMA
-  metadata:
-    book: book-8Q7HM3
-    depth: 2
-  range:
-  - 439
-  - 479
-  subchapters:
-  - chapter-egTHiA
-  - chapter-VXgJXF
-  - chapter-MCx7Xh
-  - chapter-h3dEiX
-  - chapter-ZDiBmv
-  - chapter-XKsCUw
-  - chapter-WpFjpn
-  - chapter-fYpi67
-  - chapter-WuXVyL
-  - chapter-euFXsD
-  - chapter-nBkNry
-  - chapter-HJZZ7n
-  - chapter-CRE4sF
-  title: Stream Processing
-- id: chapter-egTHiA
+- id: chapter-PVQDm3
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 440
-  - 441
+  - 451
+  - 411
+  subchapters: []
+  title: Summary
+- id: chapter-YDp3fK
+  metadata:
+    book: book-8Q7HM3
+    depth: 2
+  range:
+  - 461
+  - 511
+  subchapters:
+  - chapter-7Z7YzN
+  - chapter-CvwPfq
+  - chapter-EBY5f8
+  - chapter-ZDqbG7
+  - chapter-2QFvfK
+  title: Stream Processing
+- id: chapter-7Z7YzN
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 462
+  - 463
   subchapters: []
   title: Transmitting Event Streams
-- id: chapter-VXgJXF
+- id: chapter-CvwPfq
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 441
-  - 446
-  subchapters: []
+  - 463
+  - 473
+  subchapters:
+  - chapter-PYEmaS
   title: Messaging Systems
-- id: chapter-MCx7Xh
+- id: chapter-PYEmaS
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 446
-  - 451
+  - 468
+  - 463
   subchapters: []
   title: Partitioned Logs
-- id: chapter-h3dEiX
+- id: chapter-EBY5f8
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 451
-  - 452
-  subchapters: []
+  - 473
+  - 481
+  subchapters:
+  - chapter-PuCYDq
+  - chapter-SGeqTC
+  - chapter-VoSchC
   title: Databases and Streams
-- id: chapter-ZDiBmv
+- id: chapter-PuCYDq
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 452
-  - 454
+  - 474
+  - 476
   subchapters: []
   title: Keeping Systems in Sync
-- id: chapter-XKsCUw
+- id: chapter-SGeqTC
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 454
-  - 457
+  - 476
+  - 479
   subchapters: []
   title: Change Data Capture
-- id: chapter-WpFjpn
+- id: chapter-VoSchC
   metadata:
     book: book-8Q7HM3
-    depth: 3
-  range:
-  - 457
-  - 459
-  subchapters: []
-  title: Event Sourcing
-- id: chapter-fYpi67
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 459
-  - 464
-  subchapters: []
-  title: State, Streams, and Immutability
-- id: chapter-WuXVyL
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 464
-  - 465
-  subchapters: []
-  title: Processing Streams
-- id: chapter-euFXsD
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 465
-  - 468
-  subchapters: []
-  title: Uses of Stream Processing
-- id: chapter-nBkNry
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 468
-  - 472
-  subchapters: []
-  title: Reasoning About Time
-- id: chapter-HJZZ7n
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 472
-  - 476
-  subchapters: []
-  title: Stream Joins
-- id: chapter-CRE4sF
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 476
-  - 439
-  subchapters: []
-  title: Fault Tolerance
-- id: chapter-HLfb6y
-  metadata:
-    book: book-8Q7HM3
-    depth: 2
+    depth: 4
   range:
   - 479
-  - 489
+  - 473
+  subchapters: []
+  title: Event Sourcing
+- id: chapter-ZDqbG7
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 481
+  - 501
+  subchapters:
+  - chapter-YSQioo
+  - chapter-7ScbVD
+  - chapter-mTp8BW
+  - chapter-4yYdsi
+  - chapter-cZrbWa
+  title: State, Streams, and Immutability
+- id: chapter-YSQioo
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 486
+  - 487
+  subchapters: []
+  title: Processing Streams
+- id: chapter-7ScbVD
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 487
+  - 490
+  subchapters: []
+  title: Uses of Stream Processing
+- id: chapter-mTp8BW
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 490
+  - 494
+  subchapters: []
+  title: Reasoning About Time
+- id: chapter-4yYdsi
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 494
+  - 498
+  subchapters: []
+  title: Stream Joins
+- id: chapter-cZrbWa
+  metadata:
+    book: book-8Q7HM3
+    depth: 4
+  range:
+  - 498
+  - 481
+  subchapters: []
+  title: Fault Tolerance
+- id: chapter-2QFvfK
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 501
+  - 461
   subchapters: []
   title: Summary
-- id: chapter-hoA4ep
+- id: chapter-iaHbzq
   metadata:
     book: book-8Q7HM3
     depth: 2
   range:
-  - 489
-  - 543
+  - 511
+  - 411
   subchapters:
-  - chapter-H3WGaj
-  - chapter-2HpRWE
-  - chapter-DpSrPa
-  - chapter-YPZZyn
-  - chapter-6f3MRz
-  - chapter-83fTCU
-  - chapter-Lf6UU4
-  - chapter-XjKzLs
-  - chapter-gQHUgb
-  - chapter-TbUY7W
-  - chapter-AK2v2H
-  - chapter-eu9HQV
-  - chapter-UTkjVi
-  - chapter-hnoV6i
-  - chapter-6AHNiB
+  - chapter-Ev6w5c
+  - chapter-4r4fQ9
   title: The Future of Data Systems
-- id: chapter-H3WGaj
+- id: chapter-Ev6w5c
   metadata:
     book: book-8Q7HM3
     depth: 3
   range:
-  - 490
-  - 490
-  subchapters: []
+  - 512
+  - 565
+  subchapters:
+  - chapter-AZq5HZ
+  - chapter-ADZR5z
+  - chapter-RcJvHM
+  - chapter-ZRzPqy
+  - chapter-9rJYoQ
+  - chapter-LKV567
   title: Data Integration
-- id: chapter-2HpRWE
+- id: chapter-AZq5HZ
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 490
-  - 494
+  - 512
+  - 516
   subchapters: []
   title: Combining Specialized Tools by Deriving Data
-- id: chapter-DpSrPa
+- id: chapter-ADZR5z
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 494
-  - 499
+  - 516
+  - 521
   subchapters: []
   title: Batch and Stream Processing
-- id: chapter-YPZZyn
+- id: chapter-RcJvHM
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 499
-  - 499
-  subchapters: []
+  - 521
+  - 526
+  subchapters:
+  - chapter-KvvKYQ
   title: Unbundling Databases
-- id: chapter-6f3MRz
+- id: chapter-KvvKYQ
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 5
   range:
-  - 499
-  - 504
+  - 521
+  - 521
   subchapters: []
   title: Composing Data Storage Technologies
-- id: chapter-83fTCU
+- id: chapter-ZRzPqy
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 504
-  - 509
+  - 526
+  - 531
   subchapters: []
   title: Designing Applications Around Dataflow
-- id: chapter-Lf6UU4
+- id: chapter-9rJYoQ
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 509
-  - 515
+  - 531
+  - 537
   subchapters: []
   title: Observing Derived State
-- id: chapter-XjKzLs
+- id: chapter-LKV567
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 4
   range:
-  - 515
-  - 516
-  subchapters: []
+  - 537
+  - 512
+  subchapters:
+  - chapter-Bb4YGh
+  - chapter-G679LU
+  - chapter-8ZEW7z
+  - chapter-nbJFEW
+  - chapter-e8DisE
+  - chapter-XLoUNx
+  - chapter-QBXzVa
   title: Aiming for Correctness
-- id: chapter-gQHUgb
+- id: chapter-Bb4YGh
   metadata:
     book: book-8Q7HM3
-    depth: 3
+    depth: 5
   range:
-  - 516
-  - 521
+  - 538
+  - 543
   subchapters: []
   title: The End-to-End Argument for Databases
-- id: chapter-TbUY7W
+- id: chapter-G679LU
   metadata:
     book: book-8Q7HM3
-    depth: 3
-  range:
-  - 521
-  - 524
-  subchapters: []
-  title: Enforcing Constraints
-- id: chapter-AK2v2H
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 524
-  - 528
-  subchapters: []
-  title: Timeliness and Integrity
-- id: chapter-eu9HQV
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 528
-  - 533
-  subchapters: []
-  title: Trust, but Verify
-- id: chapter-UTkjVi
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 533
-  - 533
-  subchapters: []
-  title: Doing the Right Thing
-- id: chapter-hnoV6i
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 533
-  - 536
-  subchapters: []
-  title: Predictive Analytics
-- id: chapter-6AHNiB
-  metadata:
-    book: book-8Q7HM3
-    depth: 3
-  range:
-  - 536
-  - 489
-  subchapters: []
-  title: Privacy and Tracking
-- id: chapter-YDpxod
-  metadata:
-    book: book-8Q7HM3
-    depth: 2
+    depth: 5
   range:
   - 543
-  - 389
+  - 546
+  subchapters: []
+  title: Enforcing Constraints
+- id: chapter-8ZEW7z
+  metadata:
+    book: book-8Q7HM3
+    depth: 5
+  range:
+  - 546
+  - 550
+  subchapters: []
+  title: Timeliness and Integrity
+- id: chapter-nbJFEW
+  metadata:
+    book: book-8Q7HM3
+    depth: 5
+  range:
+  - 550
+  - 555
+  subchapters: []
+  title: Trust, but Verify
+- id: chapter-e8DisE
+  metadata:
+    book: book-8Q7HM3
+    depth: 5
+  range:
+  - 555
+  - 555
+  subchapters: []
+  title: Doing the Right Thing
+- id: chapter-XLoUNx
+  metadata:
+    book: book-8Q7HM3
+    depth: 5
+  range:
+  - 555
+  - 558
+  subchapters: []
+  title: Predictive Analytics
+- id: chapter-QBXzVa
+  metadata:
+    book: book-8Q7HM3
+    depth: 5
+  range:
+  - 558
+  - 537
+  subchapters: []
+  title: Privacy and Tracking
+- id: chapter-4r4fQ9
+  metadata:
+    book: book-8Q7HM3
+    depth: 3
+  range:
+  - 565
+  - 511
   subchapters: []
   title: Summary

@@ -1,13 +1,13 @@
 chapters:
-- chapter-XKbs6i
-- chapter-4wHZ6n
-- chapter-PLWncf
+- chapter-iS7XPL
+- chapter-TNZgFM
+- chapter-4dGbzC
 id: book-8Q7HM3
 metadata:
   authors:
   - Martin Kleppmann
   date: '2019'
-  publisher: Springer
   image: "https://static.vecteezy.com/system/resources/previews/021/014/278/original/wild-boar-cute-illustration-png.png"
+  publisher: Springer
   stars: 1
 title: Designing Data-Intensive Applications
