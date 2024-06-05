@@ -11,3 +11,7 @@ export function initializeFirebase() {
         throw error;
     }
 }
+
+initializeFirebase();
+
+export const db = admin.firestore();

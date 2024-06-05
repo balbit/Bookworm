@@ -1,6 +1,5 @@
 import express from 'express';
 import { router as pageRoutes } from './routes/index';
-import { initializeFirebase } from './utils/firebaseInit';
 import { setupSwagger } from './swaggerConfig';
 import cors from 'cors';
 
@@ -10,7 +9,7 @@ if (!process.env.GOOGLE_APPLICATION_CREDENTIALS) {
   process.exit(1);
 }
 
-initializeFirebase();
+import { db } from './utils/firebaseInit';
 
 const app = express();
 const port = 3000;
