@@ -1,9 +1,13 @@
 import * as admin from 'firebase-admin';
 import { DocumentData } from 'firebase-admin/firestore';
+import { db } from './firebaseInit';
+import { doc, getDoc, updateDoc } from 'firebase/firestore';
+import { BookProgress, ChapterProgress } from '../types/userSchema';
 
 enum IDType {
     CHAPTER = 'chapter',
     BOOK = 'book',
+    USER = 'user',
     UNKNOWN = 'unknown'
 }
 
@@ -12,6 +16,8 @@ function getIdType(id: string): IDType {
         return IDType.CHAPTER;
     } else if (id.startsWith('book-')) {
         return IDType.BOOK;
+    } else if (id.startsWith('user-')) {
+        return IDType.USER;
     } else {
         return IDType.UNKNOWN;
     }
@@ -73,6 +79,58 @@ async function fetchBookInfo(bookId: string): Promise<DocumentData> {
         console.error('Error fetching document: ', error);
         throw error;
     }
+}
+
+export async function getUserInfo(userId: string): Promise<DocumentData> {
+    const userRef = admin.firestore().collection('userInfo').doc(userId);
+    const userDoc = await userRef.get();
+
+    if (!userDoc.exists) {
+        throw new Error("User not found");
+    }
+
+    const userData = userDoc.data();
+
+    if (userData === undefined) {
+        throw new Error('User data is undefined');
+    }
+
+    return userData;
+}
+
+export async function setUserBookProgress(userId: string, bookId: string, chapterId: string, progress: number): Promise<void> {
+    const userData = await getUserInfo(userId);
+    const bookProgress: BookProgress = userData.progress[bookId];
+
+    if (!bookProgress) {
+        // TODO: Handle this case more gracefully
+        throw new Error(`Book progress not found for book ${bookId}`);
+    }
+
+    const chapters: Array<ChapterProgress> = bookProgress.chapters;
+
+    chapters.forEach((chapter: any) => {
+        if (chapter.chapterId === chapterId) {
+            chapter.percentComplete = progress;
+        }
+    });
+
+    // check if a new chapter is being added
+    const chapterIds = chapters.map((chapter: any) => chapter.chapterId);
+    if (!chapterIds.includes(chapterId)) {
+        bookProgress.chapters.push({
+            chapterId,
+            metadata: {
+            },
+            percentComplete: progress,
+        });
+    }
+
+    // update
+    const userRef = db.collection('userInfo').doc(userId);
+    await userRef.update({
+        [`progress.${bookId}.chapters`]: chapters,
+    });
 }
 
 export function DocumentDataToRecord(docData: DocumentData): Record<string, any> {

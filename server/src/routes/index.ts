@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { getPagesFromFirebase, getChapterInfo, getBookInfo, getChapterPages, getBookSubchaptersInfo } from '../utils/firebaseUtils';
+import { getUserInfo, setUserBookProgress } from '../utils/firebaseDB';
 
 export const router = Router();
 
@@ -140,6 +141,46 @@ router.get('/getBookInfo', async (req: Request, res: Response) => {
 
 /**
  * @swagger
+ * /api/v1/getUserInfo:
+ *  get:
+ *   summary: Retrieve user information from Firebase
+ *  parameters:
+ *   - in: query
+ *     name: id
+ *     schema:
+ *       type: string
+ *     required: true
+ *     description: The user ID
+ *  responses:
+ *    200:
+ *     description: User information
+ *     content:
+ *       application/json:
+ *         schema:
+ *           type: object
+ * 
+ */
+router.get('/getUserInfo', async (req: Request, res: Response) => {
+    const { id } = req.query;
+
+    if (!id || typeof id !== 'string') {
+        return res.status(400).json({ message: "Invalid or missing id parameter" });
+    }
+
+    console.log(`Fetching user info for ${id}`);
+
+    try {
+        const userInfo = await getUserInfo(id);
+        res.json(userInfo);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: error });
+    }
+});
+
+
+/**
+ * @swagger
  * /api/v1/getChapterPages:
  *   get:
  *     summary: Retrieve pages of a chapter from Firebase
@@ -179,6 +220,28 @@ router.get('/getChapterPages', async (req: Request, res: Response) => {
         res.status(500).json({ message: error });
     }
 });
+
+
+router.post('/setUserBookProgress', async (req: Request, res: Response) => {
+    console.log('Setting user book progress');
+
+    const { userId, bookId, chapterId, progress } = req.body;
+
+    if (!userId || !bookId || !chapterId || !progress || typeof userId !== 'string' || typeof bookId !== 'string' || typeof chapterId !== 'string' || typeof progress !== 'number') {
+        return res.status(400).json({ message: "Invalid or missing userId, bookId, or progress parameter" });
+    }
+
+    console.log(`Setting progress for user ${userId} on book ${bookId} in chapter ${chapterId} to ${progress}`);
+
+    try {
+        await setUserBookProgress(userId, bookId, chapterId, progress);
+        res.json({ message: "Progress set successfully" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: error });
+    }
+});
+
 
 /**
  * @swagger

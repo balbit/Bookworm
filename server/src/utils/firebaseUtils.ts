@@ -23,7 +23,7 @@ export async function getBookInfo(bookId: string) {
 export async function getChapterPages(chapterId: string): Promise<string> {
     const chapterInfo = await fetchChapterInfo(chapterId);
     const length = chapterInfo.range[1] - chapterInfo.range[0] + 1;
-    const MAX_PAGES = 10;
+    const MAX_PAGES = 60;
     if (length > MAX_PAGES) {
         throw new Error('Too many pages requested');
     }
