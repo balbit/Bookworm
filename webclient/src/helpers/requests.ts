@@ -1,6 +1,7 @@
 import {SERVER_URL} from '../config.ts';
 import { BookSchema } from '@common/schemas/ts/bookSchema';
 import { ChapterSchema } from '@common/schemas/ts/chapterSchema.ts';
+import { UserSchema } from '@common/schemas/ts/userSchema';
 import axios from 'axios';
 
 const BASE_URL = `${SERVER_URL}/api/v1`;
@@ -106,8 +107,33 @@ export const getBookSubchaptersInfo = async (id: string): Promise<BookSchema> =>
     }
 };
 
+export const getUserInfo = async (id: string): Promise<UserSchema> => {
+    try {
+        const response = await axios.get<UserSchema>(`${BASE_URL}/getUserInfo`, {
+            params: { id }
+        });
+        return response.data;
+    } catch (error) {
+        console.error(error);
+        throw new Error('Failed to fetch user info for user ID: ' + id);
+    }
+}
+
+export const setUserBookProgress = async (id: string, bookId: string, chapterId: string, progress: number): Promise<void> => {
+    try {
+        console.log(`Setting progress for user ${id} on book ${bookId} in chapter ${chapterId} to ${progress}`);
+        await axios.post(`${BASE_URL}/setUserBookProgress`, {
+            userId: id,
+            bookId: bookId,
+            chapterId: chapterId,
+            progress: progress
+        });
+    } catch (error) {
+        console.error(error);
+        throw new Error('Failed to set user book progress');
+    }
+}
+
 function constructPageQuery(first: number, last: number): string {
     return (first === last) ? `${first}`: `${first}-${last}`;
 }
-
-export {getTextbookMetadata, getTextbookContent};
