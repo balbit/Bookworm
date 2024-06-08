@@ -13,9 +13,20 @@ function Book(props: { id: string, bookProgress: BookProgress | undefined }) {
         let isMounted = true; // Flag to track component mount status
 
         async function fetchContent() {
+
             try {
-                setIsLoading(true); // Set loading true at the start of the fetch
-                const gotBookInfo = await getBookSubchaptersInfo(id);
+                setIsLoading(true);
+
+                let gotBookInfo: BookSchema | undefined = undefined;
+
+                // check if it's stored in local storage
+                if (localStorage.getItem(id)) {
+                    console.log('got book info from local storage')
+                    gotBookInfo = JSON.parse(localStorage.getItem(id) || '');
+                } else {
+                    gotBookInfo = await getBookSubchaptersInfo(id);
+                    localStorage.setItem(id, JSON.stringify(gotBookInfo));
+                }
 
                 if (isMounted) {
                     setBookInfo(gotBookInfo);
