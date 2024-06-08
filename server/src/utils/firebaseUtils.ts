@@ -85,9 +85,12 @@ async function mergePdfs(filePaths: Array<string>, outputFileName: string): Prom
     const bucket = storage().bucket();
     const mergedPdfDoc = await PDFDocument.create();
 
-    for (const filePath of filePaths) {
+    const pdfDocs = await Promise.all(filePaths.map(async (filePath) => {
         const fileBuffer = (await bucket.file(filePath).download())[0];
-        const pdfDoc = await PDFDocument.load(fileBuffer);
+        return await PDFDocument.load(fileBuffer);
+    }));
+
+    for (const pdfDoc of pdfDocs) {
         const copiedPages = await mergedPdfDoc.copyPages(pdfDoc, pdfDoc.getPageIndices());
         copiedPages.forEach(page => mergedPdfDoc.addPage(page));
     }
