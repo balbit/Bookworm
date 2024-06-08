@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { getBookSubchaptersInfo } from '../../helpers/requests.ts';
 import { BookSchema } from '@common/schemas/ts/bookSchema.ts';
+import { BookProgress } from '@common/schemas/ts/userSchema.ts';
 import ChapterDisplay from './ChapterDisplay.tsx';
 
-function Book(props: { id: string }) {
+function Book(props: { id: string, bookProgress: BookProgress | undefined }) {
     const { id } = props;
     const [isLoading, setIsLoading] = useState(true);
     const [bookInfo, setBookInfo] = useState<BookSchema | undefined>(undefined);
@@ -46,7 +47,7 @@ function Book(props: { id: string }) {
             <div>
             <h1>Book {bookInfo.title}</h1>
             <img src={image} alt={`Cover for ${bookInfo.title}`} style={{ width: '200px' }} />
-            {bookInfo.chapterInfo && bookInfo.chapterInfo.map((chapter) => <ChapterDisplay chapterInfo={chapter} isRootLevel={true} />)}
+            {bookInfo.chapterInfo && bookInfo.chapterInfo.map((chapter) => <ChapterDisplay chapterInfo={chapter} isRootLevel={true} bookProgress={props.bookProgress} />)}
             </div>
         );
     }

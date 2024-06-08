@@ -223,13 +223,11 @@ router.get('/getChapterPages', async (req: Request, res: Response) => {
 
 
 router.post('/setUserBookProgress', async (req: Request, res: Response) => {
-    console.log('Setting user book progress');
-
     const { userId, bookId, chapterId, progress } = req.body;
 
     if (!userId || !bookId || !chapterId || (progress === undefined) || typeof userId !== 'string' || typeof bookId !== 'string' || typeof chapterId !== 'string' || typeof progress !== 'number') {
-        console.log(`${userId} ${bookId} ${chapterId} ${progress}`);
-        console.log(typeof userId, typeof bookId, typeof chapterId, typeof progress);
+        console.error(`${userId} ${bookId} ${chapterId} ${progress}`);
+        console.error(typeof userId, typeof bookId, typeof chapterId, typeof progress);
         return res.status(400).json({ message: "Invalid or missing userId, bookId, or progress parameter" });
     }
 
