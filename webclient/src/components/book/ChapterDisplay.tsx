@@ -16,7 +16,11 @@ function ChapterDisplay(props: {chapterInfo: ChapterSchema, isRootLevel?: boolea
     const [isLoading, setIsLoading] = useState(true);
     const [contentURL, setContentURL] = useState("");
     const [userID, setUserID] = useState<string | undefined>(undefined);
-    const [progress, setProgress] = useState<number>(0);
+
+    const thisChapter = props.bookProgress?.chapters.find((chapter) => chapter.chapterId === id);
+    console.log('chapter ' + chapterInfo.id);
+    console.log('bookProgress: ' + props.bookProgress + ' thisChapter: ' + thisChapter);
+    const [progress, setProgress] = useState<number>(thisChapter?.percentComplete || 0);
 
     useEffect(() => {
         if (!userID) {
@@ -75,6 +79,8 @@ function ChapterDisplay(props: {chapterInfo: ChapterSchema, isRootLevel?: boolea
                 const thisChapter = props.bookProgress?.chapters.find((chapter) => chapter.chapterId === id);
                 if (thisChapter) {
                     thisChapter.percentComplete = newProgress;
+                } else {
+                    props.bookProgress?.chapters.push({chapterId: id, percentComplete: newProgress, metadata: {}});
                 }
                 setProgress(newProgress);
             } catch (error) {
@@ -96,23 +102,25 @@ function ChapterDisplay(props: {chapterInfo: ChapterSchema, isRootLevel?: boolea
                         }
                     }}
                 >
-                    <h1>{title}</h1>
-                    <h2>{isRootLevel}</h2>
-                    <h2>Pages: {range[0]}-{range[1]}</h2>
-                    <button onClick={(e) => { e.stopPropagation(); setIsReading(!isReading); }}>
-                        {isReading ? "Stop Reading" : "Read"}
-                    </button>
-                    <button onClick={(e) => { e.stopPropagation(); updateProgress(progress === 100? 0 : 100); }}>
-                        {progress === 100 ? "Not done yet" : "Done reading!"}
-                    </button>
-                    {isReading && <iframe src={contentURL} width="100%" height="1000px" title={`Book Content ${id}`}></iframe>}
-                    {expanded && subchapters && subchapterInfo && (
-                        <div>
-                            {subchapterInfo.map((subchapter) => (
-                                <ChapterDisplay key={subchapter.id} chapterInfo={subchapter} />
-                            ))}
-                        </div>
-                    )}
+                    <div className={progress === 100 ? 'chapter-done' : 'chapter-not-done'}>
+                        <h1>{title}</h1>
+                        <h2>{isRootLevel}</h2>
+                        <h2>Pages: {range[0]}-{range[1]}</h2>
+                        <button onClick={(e) => { e.stopPropagation(); setIsReading(!isReading); }}>
+                            {isReading ? "Stop Reading" : "Read"}
+                        </button>
+                        <button onClick={(e) => { e.stopPropagation(); updateProgress(progress === 100? 0 : 100); }}>
+                            {progress === 100 ? "Not done yet" : "Done reading!"}
+                        </button>
+                        {isReading && <iframe src={contentURL} width="100%" height="1000px" title={`Book Content ${id}`}></iframe>}
+                        {expanded && subchapters && subchapterInfo && (
+                            <div>
+                                {subchapterInfo.map((subchapter) => (
+                                    <ChapterDisplay key={subchapter.id} chapterInfo={subchapter} bookProgress={props.bookProgress} />
+                                ))}
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         );

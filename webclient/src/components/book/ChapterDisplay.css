@@ -1,3 +1,10 @@
+.chapter-done {
+    background-color: lightgreen;
+}
+
+.chapter-not-done {
+}
+
 .chapter-container {
     margin-left: 0;
     font-size: 1em;
