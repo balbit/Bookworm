@@ -1,4 +1,4 @@
-interface User {
+export interface UserSchema {
     id: string; // The ID of the user.
     name: string; // The name of the user.
     email: string; // The email address of the user.
@@ -9,12 +9,12 @@ interface User {
     metadata: Record<string, any>; // Metadata for the user.
 }
 
-interface BookProgress {
+export interface BookProgress {
     chapters: ChapterProgress[];
     metadata: Record<string, any>;
 }
 
-interface ChapterProgress {
+export interface ChapterProgress {
     chapterId: string; // The ID of the chapter.
     percentComplete: number; // The percentage of the chapter completed.
     metadata: Record<string, any>; // Metadata for the chapter progress.
